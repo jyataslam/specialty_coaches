@@ -1,0 +1,43 @@
+
+.nav-wrapper {
+    background-color: white;
+        
+    .brand-logo {
+        color: rgb(54, 54, 54);
+        width: 70%;
+        max-width: 28rem;
+        margin-left: 1.5rem;
+    
+        @media only screen and (max-width: 992px){
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+    .desktop-links-container {
+        margin-right: 1rem;
+    }
+
+    .desktop-link {
+        color: rgb(54, 54, 54);
+    }
+}
+
+#sidenav {
+    .divider {
+        margin: 8px 0 8px 20px;
+        width: 85%;
+        color: rgb(98, 98, 98);
+    }
+
+    .first-link {
+        margin-top: 8px;
+    }
+}
+
+#sidenav-trig {
+    color: rgb(54, 54, 54);
+}
+
+
+
