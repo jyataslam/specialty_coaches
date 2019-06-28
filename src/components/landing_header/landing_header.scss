@@ -1,0 +1,36 @@
+
+.header-container {
+    overflow: hidden;
+    margin-top: -64px;
+    height: 100vh;
+    position: relative;
+    background-image: url(../../assets/images/header-wallpaper.jpg);
+
+    .header-text-container {
+        height: 100%;
+        min-height: 929px;
+        text-align: center;
+
+            .header-text-above {
+                color: white;
+                margin-top: 35vh;
+                font-size: 60px;
+            }
+    
+            .head-divider {
+                height: 2px;
+                width: 60%;
+                background-color: lightgray;
+                margin: 60px auto 60px auto;
+            }
+
+            .header-text-below {
+                color: white;
+                font-size: 35px;
+            }
+    }
+
+    .align-items-center {
+        align-items: center;
+    }
+}
