@@ -27,13 +27,13 @@ class Nav extends Component {
     renderLinks() {
         return (
             <>
-                <li className="sidenav-close">
+                <li className="sidenav-close pr-20">
                     <Link to="/"><span className="desktop-link">Home</span></Link>
                 </li>
-                <li className="sidenav-close">
+                <li className="sidenav-close pr-20 pl-20">
                     <Link to="/about"><span className="desktop-link">About Us</span></Link>
                 </li>
-                <li className="sidenav-close">
+                <li className="sidenav-close pl-20">
                     <Link to="/contact"><span className="desktop-link">Contact</span></Link>
                 </li>
             </>
@@ -47,7 +47,7 @@ class Nav extends Component {
         return (
             <>
                 <div className="navbar-fixed">
-                    <nav>
+                    <nav className="top-nav">
                         <div className="nav-wrapper">
                             <span className="brand-logo">Specialty Coaches</span>
                             <a href="#" id="sidenav-trig" data-target="sidenav" className="sidenav-trigger">
