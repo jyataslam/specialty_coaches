@@ -5,9 +5,9 @@
     height: 100vh;
     position: relative;
     background-image: url(../../assets/images/header-wallpaper.jpg);
+    background-attachment: fixed;
 
     .header-text-container {
-        height: 100%;
         min-height: 929px;
         text-align: center;
 
@@ -15,18 +15,32 @@
                 color: white;
                 margin-top: 35vh;
                 font-size: 60px;
+
+                @media only screen and (max-width: 992px){
+                    margin-top: 35vh;
+                    font-size: 40px;
+                }
             }
     
             .head-divider {
                 height: 2px;
-                width: 60%;
+                width: 30%;
                 background-color: lightgray;
                 margin: 60px auto 60px auto;
+
+                @media only screen and (max-width: 992px){
+                    margin: 40px auto 40px auto;
+                    height: 1px;
+                }
             }
 
             .header-text-below {
                 color: white;
                 font-size: 35px;
+
+                @media only screen and (max-width: 992px){
+                    font-size: 25px;
+                }
             }
     }
 

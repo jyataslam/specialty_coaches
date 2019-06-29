@@ -12,7 +12,6 @@ class SideNav extends Component {
         M.Sidenav.init(this.sidenav, config);
     }
     render() {
-        console.log('props', this.props);
         return (
             <ul id='sidenav' ref={(element) => { this.sidenav = element }} className="sidenav">
                 {this.props.links}
