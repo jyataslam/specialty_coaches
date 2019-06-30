@@ -4,6 +4,97 @@
 }
 
 #mission-statement {
-    height: 450px;
     background: #f1f1f1;
+    padding-top: 100px;
+    letter-spacing: 0.5px;
+
+    .mission-header-row {
+        margin-bottom: 50px;
+
+        .services-text {
+            font-size: 16px;
+            letter-spacing: 0.75px;
+            font-weight: 700;
+            height: 50px;
+        }
+    
+        .services-description {
+            font-size: 42px;
+        }
+    }
+
+    .special-mission-container {
+        width: 90%;
+
+        .special-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 30px;
+
+            .first-statement-photo {
+                background: url('../../assets/images/white-tourbus.png');
+                border-radius: 10px;
+                background-size: cover;
+                margin-left: 0;
+                height: 350px;
+                background-position: center;
+            }
+
+            .second-statement-photo {
+                background: url('../../assets/images/barker-tourbus.jpg');
+                border-radius: 10px;
+                background-size: cover;
+                margin-left: 0;
+                height: 350px;
+                background-position: center;
+            }
+
+            .third-statement-photo {
+                background: url('../../assets/images/dressingroom-tourbus.jpg');
+                border-radius: 10px;
+                background-size: cover;
+                margin-left: 0;
+                height: 350px;
+                background-position: center;
+            }
+
+            .first-statement-text {
+                margin-left: 20px;
+                position: relative;
+                bottom: 20px;
+
+                .description-title {
+                    text-transform: uppercase;
+                    position: relative;
+                    bottom: 10px;
+                    font-weight: 700;
+                    font-size: 1.3em;
+                }
+
+                .description-text {
+                    padding: 0 20px;
+                }
+            }
+
+            .first-statement-text-left {
+                margin-right: 20px;
+                position: relative;
+                bottom: 30px;
+
+                .description-title {
+                    text-transform: uppercase;
+                    position: relative;
+                    bottom: 10px;
+                    font-weight: 700;
+                    font-size: 1.3em;
+                }
+
+                .description-text {
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
 }
