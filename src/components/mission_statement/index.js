@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import './mission_statement.scss';
+import whitetourbus from '../../assets/images/white-tourbus.png';
+import travis from '../../assets/images/travis-tourbus.jpg';
+import interior from '../../assets/images/tourbus-interior.jpg';
 
 class Mission extends Component {
     render() {
         return (
             <>
-                <div id="mission-statement-waypoint" className="waypoint"></div>
                 <div className="jumbotron" id="mission-statement">
                     <div className="container special-mission-container">
                         <div className="row center mission-header-row">
-                            <h2 className="services-text animated">SERVICES</h2>
-                            <h3 className="services-description animated">What we can provide for you</h3>
+                            <h2 className="services-text">SERVICES</h2>
+                            <h3 className="services-description">What we can provide for you</h3>
                         </div>
 
                         {/* First Mission Statement Item */}
                         <Fade>
                             <div className="row special-row">
-                                <div className="first-statement-photo col s12 m6"></div>
+                                <div className="first-statement-photo col s12 m6">
+                                    <div className="empty-photo-border"></div>
+                                    <img src={whitetourbus} alt="white tour bus" className="first-bus-photo"/>
+                                </div>
                                 <div className="first-statement-text center col s12 m6">
                                     <p className="description-title">Concert Touring</p>
                                     <p className="description-text">
@@ -36,14 +41,20 @@ class Mission extends Component {
                                         We're well versed in thinking outside the box. We can provide a solution for your special event or corporate tour including vehicle wrapping.
                             </p>
                                 </div>
-                                <div className="second-statement-photo col s12 m6"></div>
+                                <div className="second-statement-photo col s12 m6">
+                                    <div className="empty-photo-border"></div>
+                                    <img src={travis} alt="travis barker" className="second-bus-photo"/>
+                                </div>
                             </div>
                         </Fade>
 
                         {/* Third Mission Statement Item */}
                         <Fade>
                             <div className="row special-row">
-                                <div className="third-statement-photo col s12 m6"></div>
+                                <div className="third-statement-photo col s12 m6">
+                                    <div className="empty-photo-border"></div>
+                                    <img src={interior} alt="white tour bus" className="third-bus-photo"/>
+                                </div>
                                 <div className="first-statement-text center col s12 m6">
                                     <p className="description-title">Dressing Rooms</p>
                                     <p className="description-text">
