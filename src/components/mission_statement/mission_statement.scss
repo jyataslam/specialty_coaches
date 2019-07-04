@@ -21,6 +21,7 @@
     
         .services-description {
             font-size: 42px;
+            font-weight: 200;
         }
     }
 
@@ -32,33 +33,96 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+
+            // .first-statement-photo {
+            //     background: url('../../assets/images/white-tourbus.png');
+            //     border-radius: 10px;
+            //     background-size: cover;
+            //     margin-left: 0;
+            //     height: 350px;
+            //     background-position: center;
+            // }
 
             .first-statement-photo {
-                background: url('../../assets/images/white-tourbus.png');
                 border-radius: 10px;
                 background-size: cover;
                 margin-left: 0;
-                height: 350px;
+                height: 250px;
                 background-position: center;
+                width: 250px;
+                position: relative;
+                right: 80px;
+
+                .empty-photo-border {
+                    border: 1px solid orange;
+                    height: 250px;
+                    width: 250px;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    right: 0px;
+                    opacity: 0.7;
+                }
+
+                .first-bus-photo {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
             }
 
             .second-statement-photo {
-                background: url('../../assets/images/barker-tourbus.jpg');
                 border-radius: 10px;
                 background-size: cover;
                 margin-left: 0;
-                height: 350px;
+                height: 250px;
                 background-position: center;
+                width: 250px;
+                position: relative;
+                left: 80px;
+
+                .empty-photo-border {
+                    border: 1px solid orange;
+                    height: 250px;
+                    width: 250px;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    right: 0px;
+                    opacity: 0.7;
+                }
+
+                .second-bus-photo {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
             }
 
             .third-statement-photo {
-                background: url('../../assets/images/dressingroom-tourbus.jpg');
                 border-radius: 10px;
                 background-size: cover;
                 margin-left: 0;
-                height: 350px;
+                height: 250px;
                 background-position: center;
+                width: 250px;
+                position: relative;
+                right: 80px;
+
+                .empty-photo-border {
+                    border: 1px solid orange;
+                    height: 250px;
+                    width: 250px;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    right: 0px;
+                    opacity: 0.7;
+                }
+
+                .third-bus-photo {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
             }
 
             .first-statement-text {
@@ -81,6 +145,7 @@
 
             .first-statement-text-left {
                 margin-right: 20px;
+                margin-left: 0;
                 position: relative;
                 bottom: 30px;
 
