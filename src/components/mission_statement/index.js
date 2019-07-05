@@ -17,7 +17,7 @@ class Mission extends Component {
                         </div>
 
                         {/* First Mission Statement Item */}
-                        <Fade>
+                        <Fade bottom>
                             <div className="row special-row">
                                 <div className="first-statement-photo col s12 m6">
                                     <div className="empty-photo-border"></div>
@@ -33,7 +33,7 @@ class Mission extends Component {
                         </Fade>
 
                         {/* Second Mission Statement Item */}
-                        <Fade>
+                        <Fade bottom>
                             <div className="row special-row">
                                 <div className="first-statement-text-left center col s12 m6">
                                     <p className="description-title">Corporate Events</p>
@@ -49,7 +49,7 @@ class Mission extends Component {
                         </Fade>
 
                         {/* Third Mission Statement Item */}
-                        <Fade>
+                        <Fade bottom>
                             <div className="row special-row">
                                 <div className="third-statement-photo col s12 m6">
                                     <div className="empty-photo-border"></div>

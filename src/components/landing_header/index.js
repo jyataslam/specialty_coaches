@@ -9,7 +9,7 @@ class Header extends Component {
                 <div className="header-text-container container">
                     <p className="header-text-above col s12">Specialty Coaches</p>
                     <div className="divider head-divider"></div>
-                    <p className="header-text-below col s12">Transportation at its Finest</p>
+                    <p className="header-text-below col s12">Transportation At Its Finest</p>
                 </div>
             </div>
         )

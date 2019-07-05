@@ -7,7 +7,7 @@ import './nav.scss';
 class Nav extends Component {
     state = {
         navClass: 'notactive',
-        textClass: 'top'
+        textClass: 'top',
     }
 
     componentDidMount() {
@@ -24,14 +24,14 @@ class Nav extends Component {
     notTop(){
         this.setState({
             navClass: 'active',
-            textClass: 'bottom'
+            textClass: 'bottom',
         })
     }
 
     onTop() {
         this.setState({
             navClass: 'notactive',
-            textClass: 'top'
+            textClass: 'top',
         })
     }
 
@@ -40,6 +40,10 @@ class Nav extends Component {
             <>
                 <li className="sidenav-close first-link">
                     <Link to="/"><span className="desktop-link">Home</span></Link>
+                </li>
+                <li><div className="divider lightgrey"></div></li>
+                <li className="sidenav-close">
+                    <Link to="/#services"><span className="desktop-link">Services</span></Link>
                 </li>
                 <li><div className="divider lightgrey"></div></li>
                 <li className="sidenav-close">
@@ -62,6 +66,9 @@ class Nav extends Component {
                     <Link to="/"><span className={`desktop-link ${text}`}>Home</span></Link>
                 </li>
                 <li className="sidenav-close pr-20 pl-20">
+                    <Link to="/services"><span className={`desktop-link ${text}`}>Services</span></Link>
+                </li>
+                <li className="sidenav-close pr-20 pl-20">
                     <Link to="/about"><span className={`desktop-link ${text}`}>About Us</span></Link>
                 </li>
                 <li className="sidenav-close pl-20">
@@ -76,6 +83,7 @@ class Nav extends Component {
         const sidenavLinks = this.renderSidenavLinks();
         const nav = this.state.navClass;
         const text = this.state.textClass;
+        const padding = this.state.navPaddingClass;
 
         return (
             <>
