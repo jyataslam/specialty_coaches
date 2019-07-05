@@ -80,6 +80,8 @@
 
         li {
             display: inline-block;
+            margin-left: 10px;
+            margin-right: 0;
 
             a {
                 display: block;
@@ -91,11 +93,19 @@
 
             #social-li {
                 outline: none;
+            }
 
-                #social-svg {
+            #social-svg {
                     fill: #969696;
                 }
-            }
+        }
+    }
+
+    .copyright-row {
+        margin-bottom: 0;
+
+        #copyright {
+        font-size: 13px;
         }
     }
 }
