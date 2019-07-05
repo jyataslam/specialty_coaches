@@ -4,10 +4,11 @@
     box-shadow: none;
     transition: all .4s;
     color: whitesmoke;
+    padding-top: 20px;
 }
 
 .top-nav.active {
-    background-color: #fff;
+    background: #fafafaf7;
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.22);
     color: #444;
     transition: all .4s;
@@ -47,6 +48,8 @@
 
     .desktop-links-container {
         margin-right: 155px;
+        font-weight: 100;
+        letter-spacing: 3px;
     }
 
     .desktop-link.top {

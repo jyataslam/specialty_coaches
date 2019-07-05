@@ -14,7 +14,7 @@
 
         .services-text {
             font-size: 16px;
-            letter-spacing: 0.75px;
+            letter-spacing: 1.75px;
             font-weight: 700;
             height: 50px;
         }
@@ -34,19 +34,12 @@
             justify-content: center;
             position: relative;
             margin-bottom: 40px;
-
-            // .first-statement-photo {
-            //     background: url('../../assets/images/white-tourbus.png');
-            //     border-radius: 10px;
-            //     background-size: cover;
-            //     margin-left: 0;
-            //     height: 350px;
-            //     background-position: center;
-            // }
+            height: 250px;
 
             .first-statement-photo {
                 border-radius: 10px;
                 background-size: cover;
+                margin-right: 30px;
                 margin-left: 0;
                 height: 250px;
                 background-position: center;
@@ -73,8 +66,9 @@
 
             .second-statement-photo {
                 border-radius: 10px;
+                margin-right: 0px;
                 background-size: cover;
-                margin-left: 0;
+                margin-left: 30px;
                 height: 250px;
                 background-position: center;
                 width: 250px;
@@ -101,6 +95,7 @@
             .third-statement-photo {
                 border-radius: 10px;
                 background-size: cover;
+                margin-right: 30px;
                 margin-left: 0;
                 height: 250px;
                 background-position: center;
@@ -128,7 +123,13 @@
             .first-statement-text {
                 margin-left: 20px;
                 position: relative;
-                bottom: 20px;
+                bottom: 0px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                border-left: 2px solid lightgrey;
+                padding-left: 45px;
 
                 .description-title {
                     text-transform: uppercase;
@@ -147,7 +148,13 @@
                 margin-right: 20px;
                 margin-left: 0;
                 position: relative;
-                bottom: 30px;
+                bottom: 0px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                border-right: 2px solid lightgrey;
+                padding-right: 45px;
 
                 .description-title {
                     text-transform: uppercase;
