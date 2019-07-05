@@ -1,0 +1,64 @@
+
+#testimonials {
+    background: #33383D;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    letter-spacing: 0.5px;
+    color: #fff;
+
+    .test-header-row {
+        margin-bottom: 50px;
+    
+        .services-description {
+            font-size: 42px;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+    }
+
+    .special-test-container {
+        width: 90%;
+    }
+
+    .special-test-row {
+        background-color: lightblue;
+        position: relative;
+        margin-bottom: 40px;
+        height: 500px;
+
+        .test-flexed-item-container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 992px) {
+                height: 50%;
+            }
+
+            .text-item-container-top {
+                height: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 350px;
+            }
+
+            .text-item-container-bottom {
+                height: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+
+            .item-container-text {
+                position: relative;
+            }
+        }
+    }
+}
