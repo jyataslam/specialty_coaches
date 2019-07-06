@@ -9,7 +9,7 @@ class Mission extends Component {
     render() {
         return (
             <>
-                <div className="jumbotron" id="mission-statement">
+                <div className="jumbotron" id="services">
                     <div className="container special-mission-container">
                         <div className="row center mission-header-row">
                             <h2 className="services-text">SERVICES</h2>

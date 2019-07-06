@@ -29,6 +29,34 @@
             font-size: 16px;
             font-weight: 200;
         }
+
+        .custom-button {
+            border-radius: 27px;
+            height: 54px;
+            color: #fff;
+            border: none;
+            background-color: #82ba47;
+            text-transform: uppercase;
+            line-height: 54px;
+            font-weight: 600;
+            padding-left: 3em;
+            padding-right: 3em;
+            margin-top: 15px;
+        }
+
+        .custom-button:hover {
+            border-radius: 27px;
+            height: 54px;
+            color: #fff;
+            border: none;
+            background-color: #2b3345;
+            text-transform: uppercase;
+            line-height: 54px;
+            font-weight: 600;
+            padding-left: 3em;
+            padding-right: 3em;
+            margin-top: 15px;
+        }
     }
 
     
