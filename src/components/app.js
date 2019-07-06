@@ -3,6 +3,7 @@ import Nav from './nav';
 import Header from './landing_header';
 import Mission from './mission_statement';
 import Testimonials from './testimonials';
+import About from './about';
 import Footer from './footer';
 
 import 'materialize-css/dist/css/materialize.min.css';
@@ -15,7 +16,8 @@ const App = () => (
             <Nav/>
             <Header/>
             <Mission/>
-            <Testimonials/>
+            <About/>
+            {/* <Testimonials/> */}
             <Footer/>
         </div>
     </>

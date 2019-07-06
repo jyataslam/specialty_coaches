@@ -5,7 +5,7 @@ class Testimonials extends Component {
 
     render(){
         return (
-            <div id ="testimonials" className="jumbotron">
+            <div className="jumbotron" id ="testimonials">
                 <div className="container special-test-container">
                     <div className="row center test-header-row">
                         <h3 className="services-description col s12">What our clients are saying about us</h3>

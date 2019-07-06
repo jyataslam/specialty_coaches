@@ -4,18 +4,23 @@
     margin-top: -64px;
     height: 100vh;
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../../assets/images/landing-metro.jpg);
+    // background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../../assets/images/landing-metro.jpg);
+    background: url(../../assets/images/tourbus-about.jpg);
     background-attachment: fixed;
-    background-position: center center;
+    // background-position: center center;
     background-size: cover;
+    
+    // only for bus photo
+    background-position-x: -100px;
 
     .header-text-container {
         min-height: 929px;
         text-align: center;
+        margin-right: 0;
 
             .header-text-above {
                 color: white;
-                margin-top: 35vh;
+                margin-top: 40vh;
                 font-size: 60px;
                 letter-spacing: 5px;
 
@@ -26,9 +31,9 @@
             }
     
             .head-divider {
-                height: 2px;
+                height: 3px;
                 width: 30%;
-                background-color: lightgray;
+                background-color: whitesmoke;
                 margin: 60px auto 60px auto;
 
                 @media only screen and (max-width: 992px){
