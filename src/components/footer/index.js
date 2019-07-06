@@ -7,7 +7,7 @@ class Footer extends Component {
         return (
             <div className="jumbotron" id="footer">
                 <div className="container">
-                    <ul className="row">
+                    <ul className="row" id="footer-links-row">
                         <li className="col s12 m1 offset-m4">
                             <a href="#home">Home</a>
                         </li>
