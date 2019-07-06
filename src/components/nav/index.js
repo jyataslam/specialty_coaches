@@ -39,19 +39,19 @@ class Nav extends Component {
         return (
             <>
                 <li className="sidenav-close first-link">
-                    <Link to="/"><span className="desktop-link">Home</span></Link>
+                    <a href="/"><span className="desktop-link">Home</span></a>
                 </li>
                 <li><div className="divider lightgrey"></div></li>
                 <li className="sidenav-close">
-                    <Link to="/#services"><span className="desktop-link">Services</span></Link>
+                    <a href="#services"><span className="desktop-link">Services</span></a>
                 </li>
                 <li><div className="divider lightgrey"></div></li>
                 <li className="sidenav-close">
-                    <Link to="/about"><span className="desktop-link">About Us</span></Link>
+                    <a href="#about"><span className="desktop-link">About Us</span></a>
                 </li>
                 <li><div className="divider lightgrey"></div></li>
                 <li className="sidenav-close">
-                    <Link to="/contact"><span className="desktop-link">Contact</span></Link>
+                    <a href="#contact"><span className="desktop-link">Contact</span></a>
                 </li>
             </>
         )
@@ -63,16 +63,16 @@ class Nav extends Component {
         return (
             <>
                 <li className="sidenav-close pr-20">
-                    <Link to="/"><span className={`desktop-link ${text}`}>Home</span></Link>
+                    <a href="/"><span className={`desktop-link ${text}`}>Home</span></a>
                 </li>
                 <li className="sidenav-close pr-20 pl-20">
-                    <Link to="/services"><span className={`desktop-link ${text}`}>Services</span></Link>
+                    <a href="#services"><span className={`desktop-link ${text}`}>Services</span></a>
                 </li>
                 <li className="sidenav-close pr-20 pl-20">
-                    <Link to="/about"><span className={`desktop-link ${text}`}>About Us</span></Link>
+                    <a href="#about"><span className={`desktop-link ${text}`}>About Us</span></a>
                 </li>
                 <li className="sidenav-close pl-20">
-                    <Link to="/contact"><span className={`desktop-link ${text}`}>Contact</span></Link>
+                    <a href="#contact"><span className={`desktop-link ${text}`}>Contact</span></a>
                 </li>
             </>
         )
