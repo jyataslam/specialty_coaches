@@ -10,20 +10,24 @@
 
     .special-service-container {
 
-        .service-main-text {
-            font-size: 16px;
-            letter-spacing: 1.75px;
-            font-weight: 700;
-            height: 50px;
-            text-transform: uppercase;
-            margin-top: 15vh;
-        }
+        .services-header-row {
+            margin-bottom: 45px;
 
-        .service-description {
-            font-size: 42px;
-            margin-bottom: 20px;
-            font-weight: 200;
-            text-transform: uppercase;
+            .service-main-text {
+                font-size: 16px;
+                letter-spacing: 1.75px;
+                font-weight: 700;
+                height: 50px;
+                text-transform: uppercase;
+                margin-top: 12vh;
+            }
+    
+            .service-description {
+                font-size: 42px;
+                margin-bottom: 20px;
+                font-weight: 200;
+                text-transform: uppercase;
+            }
         }
 
         .services-title {
@@ -32,16 +36,38 @@
             font-size: 1.3em;
         }
 
-        .service-one-icon {
-            border: 1px solid #E41919;
-    color: #E41919;
-    height: 40px;
-    width: 40px;
-    display: inline-block;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 16px;
+        .special-services-row {
+            margin-bottom: 5em;
+
+            .custom-services-icon {
+                font-size: 4em;
+            }
+        }
+
+        .special-services-row-last {
+            margin-bottom: 2em;
+
+            .custom-services-icon {
+                font-size: 4em;
+            }
+        }
+
+        .custom-services-btn {
+            border-radius: 27px;
+            height: 54px;
+            color: #fff;
+            border: none;
+            background-color: #2b3345;
+            text-transform: uppercase;
+            line-height: 54px;
+            font-weight: 600;
+            padding-left: 3em;
+            padding-right: 3em;
+            margin-top: 15px;
+        }
+
+        .custom-services-btn:hover {
+            background-color: #82ba47;
         }
     }
 }
