@@ -38,7 +38,7 @@ class Services extends Component {
                             </div>
                         </Fade>
                         <Fade bottom>
-                            <div className="col s7 service-explanation">
+                            <div className="col s8 service-explanation">
                                 <h2 className="services-title">Corporate Events</h2>
                                 <p className="service-paragraph">We're well versed in thinking outside the box. We can provide a solution for your special event or corporate tour including vehicle wrapping.</p>
                             </div>
@@ -51,7 +51,7 @@ class Services extends Component {
                             </div>
                         </Fade>
                         <Fade bottom>
-                            <div className="col s7 service-explanation">
+                            <div className="col s6 service-explanation">
                                 <h2 className="services-title">Dressing Rooms</h2>
                                 <p className="service-paragraph">Whether you need a dressing room, production office or need to move around town, we have a coach that can work for you.</p>
                             </div>
