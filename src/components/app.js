@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from './nav';
 import Header from './landing_header';
 import Mission from './mission_statement';
+import Services from './services';
 import Testimonials from './testimonials';
 import About from './about';
 import Footer from './footer';
@@ -16,6 +17,7 @@ const App = () => (
             <Nav/>
             <Header id="home" />
             <Mission id="services" />
+            <Services />
             <About id="about" />
             {/* <Testimonials/> */}
             <Footer id="contact" />
