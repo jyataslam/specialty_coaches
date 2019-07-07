@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 import './footer.scss';
 
 class Footer extends Component {
+
+    scrollToTop = () => {
+        scroll.scrollToTop(); 
+    };
 
     render(){
         return (
@@ -9,16 +14,16 @@ class Footer extends Component {
                 <div className="container">
                     <ul className="row" id="footer-links-row">
                         <li className="col s12 m1 offset-m4">
-                            <a href="/">Home</a>
+                            <a onClick={this.scrollToTop}>Home</a>
                         </li>
                         <li className="col s12 m1">
-                            <a href="#services">Services</a>
+                            <Link to="services" spy={true} smooth={true} duration={600}>Services</Link>
                         </li>
                         <li className="col s12 m1">
-                            <a href="#about">About Us</a>
+                            <Link to="about" spy={true} smooth={true} offset={-40} duration={600}>About Us</Link>
                         </li>
                         <li className="col s12 m1">
-                            <a href="#contact">Contact</a>
+                            <Link to="contact" spy={true} smooth={true} duration={600}>Contact</Link>
                         </li>
                     </ul>
                     <div className="row" id="company">
@@ -39,6 +44,13 @@ class Footer extends Component {
                                 Huntington Beach, CA 92649
                             </a>
                         </div>
+                    </div>
+                    <div className="row" id="phone-email">
+                        <p className="col s12">
+                            <a href="tel:714-232-8668">714-232-8668</a>
+                            <br></br>
+                            <a href="mailto:jasonyata@gmail.com">Email Specialty Coaches</a>
+                        </p>
                     </div>
                     <div className="row">
                         <div className="col s12">
