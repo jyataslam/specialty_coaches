@@ -47,7 +47,7 @@ class Nav extends Component {
                 </li>
                 <li><div className="divider lightgrey"></div></li>
                 <li className="sidenav-close">
-                    <a href="#services"><span className="desktop-link">Services</span></a>
+                    <a href="#service"><span className="desktop-link">Services</span></a>
                 </li>
                 <li><div className="divider lightgrey"></div></li>
                 <li className="sidenav-close">
@@ -70,10 +70,10 @@ class Nav extends Component {
                     <a onClick={this.scrollToTop}><span className={`desktop-link ${text}`}>Home</span></a>
                 </li>
                 <li className="sidenav-close pr-20 pl-20">
-                    <Link to="services" spy={true} smooth={true} duration={600}><span className={`desktop-link ${text}`}>Services</span></Link>
+                    <Link to="service" spy={true} smooth={true} offset={-40} duration={600}><span className={`desktop-link ${text}`}>Services</span></Link>
                 </li>
                 <li className="sidenav-close pr-20 pl-20">
-                    <Link to="about" spy={true} smooth={true} offset={-40} duration={600}><span className={`desktop-link ${text}`}>About Us</span></Link>
+                    <Link to="about" spy={true} smooth={true} offset={-50} duration={600}><span className={`desktop-link ${text}`}>About Us</span></Link>
                 </li>
                 <li className="sidenav-close pl-20">
                     <Link to="contact" spy={true} smooth={true} duration={600}><span className={`desktop-link ${text}`}>Contact</span></Link>

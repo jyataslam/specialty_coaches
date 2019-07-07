@@ -16,8 +16,8 @@ const App = () => (
         <div className="app-container">
             <Nav/>
             <Header id="home" />
-            <Mission id="services" />
-            <Services />
+            {/* <Mission id="services" /> */}
+            <Services id="service" />
             <About id="about" />
             {/* <Testimonials/> */}
             <Footer id="contact" />
