@@ -31,7 +31,7 @@ class Services extends Component {
                             </div>
                         </Fade>
                     </div>
-                    <div className="row special-services-row">
+                    <div className="row special-services-row-mid">
                         <Fade left>
                             <div className="col s1 first-service-icon">
                                 <i className="material-icons custom-services-icon">people</i>
