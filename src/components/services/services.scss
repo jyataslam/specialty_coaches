@@ -30,14 +30,27 @@
             }
         }
 
-        .services-title {
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 1.3em;
+        .service-explanation {
+            max-width: 630px;
+
+            .services-title {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 1.3em;
+            }
         }
 
         .special-services-row {
             margin-bottom: 5em;
+
+            .custom-services-icon {
+                font-size: 4em;
+            }
+        }
+
+        .special-services-row-mid {
+            margin-bottom: 5em;
+            margin-left: 100px;
 
             .custom-services-icon {
                 font-size: 4em;
