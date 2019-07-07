@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import { Link } from 'react-router-dom';
 import SideNav from './sidenav';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import './nav.scss';
 
@@ -35,11 +35,15 @@ class Nav extends Component {
         })
     }
 
+    scrollToTop = () => {
+        scroll.scrollToTop(); 
+    };
+
     renderSidenavLinks() {
         return (
             <>
                 <li className="sidenav-close first-link">
-                    <a href="/"><span className="desktop-link">Home</span></a>
+                    <a onClick={this.scrollToTop}><span className="desktop-link">Home</span></a>
                 </li>
                 <li><div className="divider lightgrey"></div></li>
                 <li className="sidenav-close">
@@ -63,16 +67,16 @@ class Nav extends Component {
         return (
             <>
                 <li className="sidenav-close pr-20">
-                    <a href="/"><span className={`desktop-link ${text}`}>Home</span></a>
+                    <a onClick={this.scrollToTop}><span className={`desktop-link ${text}`}>Home</span></a>
                 </li>
                 <li className="sidenav-close pr-20 pl-20">
-                    <a href="#services"><span className={`desktop-link ${text}`}>Services</span></a>
+                    <Link to="services" spy={true} smooth={true} duration={600}><span className={`desktop-link ${text}`}>Services</span></Link>
                 </li>
                 <li className="sidenav-close pr-20 pl-20">
-                    <a href="#about"><span className={`desktop-link ${text}`}>About Us</span></a>
+                    <Link to="about" spy={true} smooth={true} offset={-40} duration={600}><span className={`desktop-link ${text}`}>About Us</span></Link>
                 </li>
                 <li className="sidenav-close pl-20">
-                    <a href="#contact"><span className={`desktop-link ${text}`}>Contact</span></a>
+                    <Link to="contact" spy={true} smooth={true} duration={600}><span className={`desktop-link ${text}`}>Contact</span></Link>
                 </li>
             </>
         )
@@ -83,14 +87,13 @@ class Nav extends Component {
         const sidenavLinks = this.renderSidenavLinks();
         const nav = this.state.navClass;
         const text = this.state.textClass;
-        const padding = this.state.navPaddingClass;
 
         return (
             <>
                 <div className="navbar-fixed">
                     <nav className={`top-nav ${nav}`}>
                         <div className="nav-wrapper">
-                            <span className={`brand-logo ${text}`}>Specialty Coaches</span>
+                            <span className={`brand-logo ${text}`} onClick={this.scrollToTop}>Specialty Coaches</span>
                             <a href="#" id="sidenav-trig" data-target="sidenav" className={`sidenav-trigger ${text}`}>
                                 <i className="material-icons">menu</i>
                             </a>
