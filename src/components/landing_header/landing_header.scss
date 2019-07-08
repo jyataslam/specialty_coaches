@@ -9,14 +9,89 @@
     background-attachment: fixed;
     // background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
     
     // only for bus photo
     background-position-x: -100px;
 
+    @media only screen and (min-width: 0px) and (max-width: 494px){
+        overflow: hidden;
+    margin-top: -64px;
+    height: 100vh;
+    position: relative;
+        background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) ), url(../../assets/images/tourbus-about.jpg);
+        background-attachment: fixed;
+    // background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    }
+
+    @media only screen and (min-width: 495px) and (max-width: 649px){
+        background-position-x: -580px;
+    }
+
+    @media only screen and (min-width: 650px) and (max-width: 819px){
+        background-position-x: -480px;
+    }
+
+    @media only screen and (min-width: 820px) and (max-width: 991px){
+        background-position-x: -390px;
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1255px){
+        background-position-x: -300px;
+    }
+
+    @media only screen and (min-width: 1256px) and (max-width: 1305px){
+        background-position-x: -150px;
+    }
+
+    @media only screen and (min-width: 1306px) and (max-width: 1446px){
+        background-position-x: -100px;
+    }
+    
     .header-text-container {
         min-height: 929px;
         text-align: center;
         margin-right: 0;
+        
+        @media only screen and (max-width: 494px){
+            margin-left: 5%;
+        }
+
+        @media only screen and (min-width: 495px) and (max-width: 649px){
+            margin-left: 22%;
+        }
+
+        @media only screen and (min-width: 650px) and (max-width: 721px){
+            margin-left: 170px;
+        }
+
+        @media only screen and (min-width: 722px) and (max-width: 991px){
+            margin-left: 200px;
+        }
+    
+        @media only screen and (min-width: 992px) and (max-width: 1255px){
+            margin-left: 350px;
+        }
+    
+        @media only screen and (min-width: 1256px) and (max-width: 1305px){
+            margin-left: 450px;
+        }
+
+        @media only screen and (min-width: 1306px) and (max-width: 1414px){
+            margin-left: 470px;
+        }
+
+        // @media only screen and (min-width: 1415px) and (max-width: 1635px){
+
+        // }
+    
+        // @media only screen and (min-width: 1636px){
+            
+        // }
 
             .header-text-above {
                 color: white;
@@ -24,10 +99,18 @@
                 font-size: 60px;
                 letter-spacing: 5px;
 
-                @media only screen and (max-width: 992px){
-                    margin-top: 35vh;
+                @media only screen and (max-width: 649px){
+                    font-size: 30px;
+                }
+
+                @media only screen and (min-width: 650px) and (max-width: 991px){
                     font-size: 40px;
                 }
+            
+                @media only screen and (min-width: 992px) and (max-width: 1255px){
+                    font-size: 50px;
+                }
+            
             }
     
             .head-divider {
@@ -40,6 +123,14 @@
                     margin: 40px auto 40px auto;
                     height: 1px;
                 }
+
+                @media only screen and (max-height: 812px){
+                    margin: 32px auto 32px auto;
+                }
+
+                @media only screen and (min-width: 0px) and (max-width: 494px){
+                    width: 50%;
+                }
             }
 
             .header-text-below {
@@ -49,7 +140,15 @@
                 font-weight: 200;
                 font-style: italic;
 
-                @media only screen and (max-width: 992px){
+                @media only screen and (max-width: 649px){
+                    font-size: 14px;
+                }
+
+                @media only screen and (min-width: 650px) and (max-width: 991px){
+                    font-size: 20px;
+                }
+            
+                @media only screen and (min-width: 992px) and (max-width: 1255px){
                     font-size: 25px;
                 }
             }
