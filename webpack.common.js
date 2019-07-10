@@ -2,7 +2,7 @@ const { resolve } = require('path');
 
 module.exports = {
     output: {
-        filename: 'bundle.main.js',
+        filename: 'bundle.[name].js',
         path: resolve(__dirname, 'dist'),
         publicPath: '/dist/'
     },
