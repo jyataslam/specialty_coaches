@@ -4,7 +4,7 @@ module.exports = {
     output: {
         filename: 'bundle.[name].js',
         path: resolve(__dirname, 'dist'),
-        publicPath: '/dist/'
+        publicPath: '/'
     },
     optimization: {
         splitChunks: {
