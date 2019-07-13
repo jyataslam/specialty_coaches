@@ -10,7 +10,7 @@ class Footer extends Component {
 
     render(){
         return (
-            <div className="jumbotron" id="contact">
+            <div className="primary-container" id="contact">
                 <div className="container">
                     <ul className="row" id="footer-links-row">
                         <li className="col s12 m1 offset-m4">

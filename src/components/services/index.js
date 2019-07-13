@@ -8,7 +8,7 @@ class Services extends Component {
     render() {
         return (
             <Fade>
-            <div className="jumbotron" id="service">
+            <div className="primary-container" id="service">
                 <div className="container special-service-container">
                     <Fade>
                         <div className="row services-header-row">

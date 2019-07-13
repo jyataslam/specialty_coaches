@@ -6,7 +6,7 @@ class About extends Component {
 
     render(){
         return (
-            <div className="jumbotron" id="about">
+            <div className="primary-container" id="about">
                 <div className="container special-about-container">
                     <div className="row">
                         <div className="col s5">
