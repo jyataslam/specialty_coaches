@@ -12,11 +12,6 @@ const server = new WebpackDevServer(webpack(config), {
     historyApiFallback: true,
     quiet: false,
     noInfo: false,
-    proxy: {
-        "/api/*": {
-          "target": "http://localhost/specialty_coaches"
-        }
-      },
     stats: {
         assets: false,
         colors: true,
