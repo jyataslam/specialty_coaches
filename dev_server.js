@@ -7,16 +7,11 @@ const PORT = process.env.PORT || 3000;
 
 const server = new WebpackDevServer(webpack(config), {
     contentBase: resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
+    publicPath: '/',
     hot: false,
     historyApiFallback: true,
     quiet: false,
     noInfo: false,
-    proxy: {
-        "/api/*": {
-          "target": "http://localhost/specialty_coaches"
-        }
-      },
     stats: {
         assets: false,
         colors: true,
