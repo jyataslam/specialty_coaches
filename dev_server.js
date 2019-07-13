@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 const server = new WebpackDevServer(webpack(config), {
     contentBase: resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
+    publicPath: '/',
     hot: false,
     historyApiFallback: true,
     quiet: false,
