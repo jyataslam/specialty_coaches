@@ -15,6 +15,10 @@
 
     .special-service-container {
 
+        @media only screen and (min-width: 993px){
+            width: 85%;
+        }
+
         .services-header-row {
             margin-bottom: 45px;
 
