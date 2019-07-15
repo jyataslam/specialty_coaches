@@ -7,7 +7,17 @@
     background-position-y: -220px;
     color: white;
 
+    @media only screen and (min-width: 993px){
+        background-position-x: -230px;
+        overflow: hidden;
+    }
+
     .special-about-container {
+        width: 70%;
+
+        @media only screen and (min-width: 993px){
+            width: 85%;
+        }
 
         .about-text {
             font-size: 16px;
@@ -16,6 +26,10 @@
             height: 50px;
             text-transform: uppercase;
             margin-top: 30vh;
+
+            @media only screen and (min-width: 993px){
+                margin-top: 15vh;
+            }
         }
         
         .about-description {
