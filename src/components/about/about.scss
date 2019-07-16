@@ -6,8 +6,14 @@
     height: 900px;
     background-position-y: -220px;
     color: white;
+    overflow: hidden;
+    // background-position-x: -200px;
 
-    @media only screen and (min-width: 993px){
+    @media only screen and (max-width: 1024px){
+        background-position-x: -200px;
+    }
+
+    @media only screen and (max-width: 993px){
         background-position-x: -230px;
         overflow: hidden;
     }
@@ -27,8 +33,16 @@
             text-transform: uppercase;
             margin-top: 30vh;
 
-            @media only screen and (min-width: 993px){
-                margin-top: 15vh;
+            @media only screen and (max-width: 1236px){
+                margin-top: 23vh;
+            }
+
+            @media only screen and (max-width: 1024px){
+                margin-top: 13vh;
+            }
+
+            @media only screen and (max-width: 993px){
+                margin-top: 11vh;
             }
         }
         
