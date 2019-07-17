@@ -13,6 +13,17 @@
         background-position-x: 100%;
     }
 
+    // ipad
+    @media only screen and (max-width: 768px){
+        background-position-x: 145%;
+    }
+
+    // iphone 8 plus
+    @media only screen and (max-width: 414px){
+        background-position-x: 130px;
+        height: 669px;
+    }
+
     .special-service-container {
 
         @media only screen and (min-width: 993px){
@@ -21,6 +32,11 @@
 
         .services-header-row {
             margin-bottom: 45px;
+
+            // iphone 8 plus
+            @media only screen and (max-width: 414px){
+                margin-bottom: 10px;
+            }
 
             .service-main-text {
                 font-size: 16px;
@@ -33,6 +49,15 @@
                 @media only screen and (max-width: 1024px){
                     margin-top: 5vh;
                 }
+
+                @media only screen and (max-width: 768px){
+                    margin-top: 7vh;
+                }
+
+                // iphone 8 plus
+                @media only screen and (max-width: 414px){
+                    font-size: 13px;
+                }
             }
     
             .service-description {
@@ -40,6 +65,13 @@
                 margin-bottom: 20px;
                 font-weight: 200;
                 text-transform: uppercase;
+
+                // iphone 8 plus
+                @media only screen and (max-width: 414px){
+                    font-size: 27px;
+                    position: relative;
+                    bottom: 10px;
+                }
             }
         }
 
@@ -50,30 +82,94 @@
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 1.3em;
+
+                // iphone 8 plus
+                @media only screen and (max-width: 414px){
+                    font-size: 15px;
+                }
+            }
+
+            .service-paragraph {
+
+                // iphone 8 plus
+                @media only screen and (max-width: 414px){
+                    font-size: 12px;
+                }
             }
         }
 
         .special-services-row {
             margin-bottom: 5em;
 
+            // iphone 8 plus
+            @media only screen and (max-width: 414px){
+                margin-bottom: 16px;
+            }
+
+            .first-service-icon {
+
+                @media only screen and (max-width: 768px){
+                    margin-right: 13px;
+                }
+            }
+
             .custom-services-icon {
                 font-size: 4em;
+
+                // iphone 8 plus
+                @media only screen and (max-width: 414px){
+                    font-size: 2em;
+                }
             }
         }
 
         .special-services-row-mid {
             margin-bottom: 5em;
 
+            // iphone 8 plus
+            @media only screen and (max-width: 414px){
+                margin-bottom: 16px;
+            }
+
+            .first-service-icon {
+
+                @media only screen and (max-width: 768px){
+                    margin-right: 13px;
+                }
+            }
+
             .custom-services-icon {
                 font-size: 4em;
+
+                // iphone 8 plus
+                @media only screen and (max-width: 414px){
+                    font-size: 2em;
+                }
             }
         }
 
         .special-services-row-last {
             margin-bottom: 2em;
 
+            // iphone 8 plus
+            @media only screen and (max-width: 414px){
+                margin-bottom: 5px;
+            }
+
+            .first-service-icon {
+
+                @media only screen and (max-width: 768px){
+                    margin-right: 13px;
+                }
+            }
+
             .custom-services-icon {
                 font-size: 4em;
+
+                // iphone 8 plus
+                @media only screen and (max-width: 414px){
+                    font-size: 2em;
+                }
             }
         }
 
@@ -89,6 +185,16 @@
             padding-left: 3em;
             padding-right: 3em;
             margin-top: 15px;
+
+            // iphone 8 plus
+            @media only screen and (max-width: 414px){
+                height: 35px;
+                line-height: 35px;
+                padding-left: 1em;
+                padding-right: 1em;
+                font-weight: 300;
+                font-size: 10px;
+            }
         }
 
         .custom-services-btn:hover {
