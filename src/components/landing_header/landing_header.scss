@@ -104,16 +104,20 @@
                 font-weight: 300;
                 margin-bottom: 20px;
 
-                @media only screen and (max-width: 649px){
-                    font-size: 30px;
+                @media only screen and (min-width: 992px) and (max-width: 1255px){
+                    font-size: 53px;
                 }
 
                 @media only screen and (min-width: 650px) and (max-width: 991px){
                     font-size: 40px;
                 }
-            
-                @media only screen and (min-width: 992px) and (max-width: 1255px){
-                    font-size: 53px;
+
+                @media only screen and (max-width: 649px){
+                    font-size: 30px;
+                }
+
+                @media only screen and (max-width: 414px){
+                    font-size: 27px;
                 }
             
             }
@@ -135,6 +139,7 @@
 
                 @media only screen and (min-width: 0px) and (max-width: 494px){
                     width: 50%;
+                    margin: 16px auto 24px auto;
                 }
 
                 @media only screen and (min-width: 992px) and (max-width: 1255px){

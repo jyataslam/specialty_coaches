@@ -19,7 +19,7 @@
     }
 
     .special-about-container {
-        width: 70%;
+        // width: 70%;
 
         @media only screen and (min-width: 993px){
             width: 85%;
@@ -43,6 +43,10 @@
 
             @media only screen and (max-width: 993px){
                 margin-top: 11vh;
+            }
+
+            @media only screen and (max-width: 768px){
+                margin-top: 23vh;
             }
         }
         
