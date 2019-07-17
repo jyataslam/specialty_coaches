@@ -6,8 +6,19 @@
     letter-spacing: 0.5px;
     text-align: center;
 
+    // iphone 8 plus
+    @media only screen and (max-width: 414px){
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
     #footer-links-row {
         width: 454px;
+
+        // iphone 8 plus
+        @media only screen and (max-width: 414px){
+            font-size: 12px;
+        }
     }
     
     .row {
@@ -21,6 +32,38 @@
             padding-left: 0;
             padding-right: 0;
             width: auto;
+        }
+
+        .first-li {
+            // iphone 8 plus
+            @media only screen and (max-width: 414px){
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        .second-li {
+            // iphone 8 plus
+            @media only screen and (max-width: 414px){
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        .third-li {
+            // iphone 8 plus
+            @media only screen and (max-width: 414px){
+                margin-left: 10px;
+                margin-right: 20px;
+            }
+        }
+
+        .fourth-li {
+            // iphone 8 plus
+            @media only screen and (max-width: 414px){
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
 
         li:hover {
@@ -39,6 +82,11 @@
         margin-top: 40px;
         margin-bottom: 0;
 
+            // iphone 8 plus
+            @media only screen and (max-width: 414px){
+                width: 350px;
+            }
+
         .company-name {
             font-family: 'Orbitron', 'sans-serif';
             color: #dadada;
@@ -55,6 +103,11 @@
         position: relative;
         bottom: 15px;
 
+        // iphone 8 plus
+        @media only screen and (max-width: 414px){
+            width: 350px;
+        }
+
         .company-tagline {
             color: #dadada;
             font-size: 17px;
@@ -66,6 +119,11 @@
     }
 
     #address {
+
+        // iphone 8 plus
+        @media only screen and (max-width: 414px){
+            width: 350px;
+        }
 
         .address {
             margin-top: 10px;
@@ -119,10 +177,28 @@
     #phone-email {
         margin-bottom: 0;
         margin-top: 30px;
+
+        // iphone 8 plus
+        @media only screen and (max-width: 414px){
+            width: 350px;
+        }
+    }
+
+    #social-media {
+
+        // iphone 8 plus
+        @media only screen and (max-width: 414px){
+            width: 350px;
+        }
     }
 
     .copyright-row {
         margin-bottom: 0;
+
+        // iphone 8 plus
+        @media only screen and (max-width: 414px){
+            width: 350px;
+        }
 
         #copyright {
         font-size: 13px;

@@ -13,16 +13,16 @@ class Footer extends Component {
             <div className="primary-container" id="contact">
                 <div className="container">
                     <ul className="row" id="footer-links-row">
-                        <li className="col s12 m1 offset-m4">
+                        <li className="col s12 m1 offset-m4 first-li">
                             <a onClick={this.scrollToTop}>Home</a>
                         </li>
-                        <li className="col s12 m1">
+                        <li className="col s12 m1 second-li">
                             <Link to="service" spy={true} smooth={true} offset={-40} duration={600}>Services</Link>
                         </li>
-                        <li className="col s12 m1">
+                        <li className="col s12 m1 third-li">
                             <Link to="about" spy={true} smooth={true} offset={-50} duration={600}>About Us</Link>
                         </li>
-                        <li className="col s12 m1">
+                        <li className="col s12 m1 fourth-li">
                             <Link to="contact" spy={true} smooth={true} duration={600}>Contact</Link>
                         </li>
                     </ul>
@@ -52,7 +52,7 @@ class Footer extends Component {
                             <a href="mailto:jasonyata@gmail.com">Email Specialty Coaches</a>
                         </p>
                     </div>
-                    <div className="row">
+                    <div className="row" id="social-media">
                         <div className="col s12">
                             <ul id="social">
                                 {/* <li>
