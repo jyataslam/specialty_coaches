@@ -49,7 +49,7 @@ class Footer extends Component {
                         <p className="col s12">
                             <a href="tel:714-232-8668">714-232-8668</a>
                             <br></br>
-                            <a href="mailto:jasonyata@gmail.com">Email Specialty Coaches</a>
+                            <a href="mailto:nick@specialtycoaches.com">nick@specialtycoaches.com</a>
                         </p>
                     </div>
                     <div className="row" id="social-media">

@@ -7,9 +7,9 @@ class Header extends Component {
         return (
             <div className="header-container">
                 <div className="header-text-container container">
-                    <p className="header-text-above col s12">Specialty Coaches</p>
+                    <p className="header-text-above col s12">Specialty <span className="coach-letter">C</span>oaches</p>
                     <div className="divider head-divider"></div>
-                    <p className="header-text-below col s12">Transportation At Its Finest</p>
+                    <p className="header-text-below col s12">- Transportation At Its Finest -</p>
                 </div>
             </div>
         )

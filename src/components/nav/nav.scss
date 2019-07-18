@@ -12,9 +12,10 @@
 }
 
 .top-nav.active {
-    background: #fafafaf7;
+    background: #000000ab;
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.22);
-    color: #444;
+    // color: #444;
+    color: whitesmoke;
     transition: all .4s;
 
     @media screen and (max-width: 992px){
@@ -57,6 +58,11 @@
             font-size: 15px;
         }
 
+        // iphone x
+        @media only screen and (max-width: 375px) and (max-height: 812px){
+            font-size: 12px;
+        }
+
     }
 
     .brand-logo:hover {
@@ -65,7 +71,8 @@
 
     .brand-logo.bottom {
         font-family: 'Orbitron', sans-serif;
-        color: #444;
+        // color: #444;
+        color: whitesmoke;
         width: 70%;
         max-width: 392px;
         margin-left: 175px;
@@ -87,6 +94,11 @@
         @media only screen and (max-width: 494px){
             font-size: 15px;
         }
+
+        // iphone x
+        @media only screen and (max-width: 375px) and (max-height: 812px){
+            font-size: 12px;
+        }
     }
 
     .desktop-links-container {
@@ -104,7 +116,8 @@
     }
 
     .desktop-link.bottom {
-        color: #444;
+        // color: #444;
+        color: whitesmoke;
     }
 
     ul {
@@ -115,14 +128,57 @@
 }
 
 #sidenav {
+    background-color: #dbdbdb;
+    color: black;
+
+    li > a {
+        color: #444;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+
+    .sidenav-coaches-title {
+        font-family: 'Orbitron', sans-serif;
+        letter-spacing: 2px;
+        font-weight: 800;
+        padding: 0 32px;
+        font-size: 16px;
+
+        .coach-letter {
+            color: darkorange;
+        }
+    }
+
+    .sidenav-coaches-title::first-letter {
+        color: darkorange;
+    }
+
+    .sidenav-menu-title {
+        letter-spacing: 3px;
+        font-weight: 500;
+        text-align: center;
+        font-size: 13px;
+        position: relative;
+        bottom: 28px;
+    }
+
     .divider {
         margin: 8px 0 8px 20px;
         width: 85%;
-        color: rgb(98, 98, 98);
+        background-color: black;
+        position: relative;
+        bottom: 28px;
     }
 
     .first-link {
         margin-top: 8px;
+        position: relative;
+        bottom: 28px;
+    }
+
+    .sidenav-close {
+        position: relative;
+        bottom: 28px;
     }
 }
 
@@ -131,7 +187,8 @@
 }
 
 .sidenav-trigger.bottom {
-    color: #444;
+    // color: #444;
+    color: whitesmoke;
 }
 
 

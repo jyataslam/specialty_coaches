@@ -40,6 +40,12 @@
                 margin-left: 10px;
                 margin-right: 10px;
             }
+
+            // iphone x
+            @media only screen and (max-width: 375px) and (max-height: 812px){
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
 
         .second-li {
@@ -47,6 +53,12 @@
             @media only screen and (max-width: 414px){
                 margin-left: 20px;
                 margin-right: 20px;
+            }
+
+            // iphone x
+            @media only screen and (max-width: 375px) and (max-height: 812px){
+                margin-left: 10px;
+                margin-right: 10px;
             }
         }
 
@@ -56,11 +68,23 @@
                 margin-left: 10px;
                 margin-right: 20px;
             }
+
+            // iphone x
+            @media only screen and (max-width: 375px) and (max-height: 812px){
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
 
         .fourth-li {
             // iphone 8 plus
             @media only screen and (max-width: 414px){
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            // iphone x
+            @media only screen and (max-width: 375px) and (max-height: 812px){
                 margin-left: 10px;
                 margin-right: 10px;
             }
@@ -87,6 +111,11 @@
                 width: 350px;
             }
 
+            // iphone x
+            @media only screen and (max-width: 375px) and (max-height: 812px){
+                width: 342px;
+            }
+
         .company-name {
             font-family: 'Orbitron', 'sans-serif';
             color: #dadada;
@@ -108,6 +137,11 @@
             width: 350px;
         }
 
+        // iphone x
+        @media only screen and (max-width: 375px) and (max-height: 812px){
+            width: 339px;
+        }
+
         .company-tagline {
             color: #dadada;
             font-size: 17px;
@@ -123,6 +157,11 @@
         // iphone 8 plus
         @media only screen and (max-width: 414px){
             width: 350px;
+        }
+
+        // iphone x
+        @media only screen and (max-width: 375px) and (max-height: 812px){
+            width: 339px;
         }
 
         .address {
@@ -182,6 +221,11 @@
         @media only screen and (max-width: 414px){
             width: 350px;
         }
+
+        // iphone x
+        @media only screen and (max-width: 375px) and (max-height: 812px){
+            width: 339px;
+        }
     }
 
     #social-media {
@@ -189,6 +233,11 @@
         // iphone 8 plus
         @media only screen and (max-width: 414px){
             width: 350px;
+        }
+
+        // iphone x
+        @media only screen and (max-width: 375px) and (max-height: 812px){
+            width: 339px;
         }
     }
 
@@ -198,6 +247,11 @@
         // iphone 8 plus
         @media only screen and (max-width: 414px){
             width: 350px;
+        }
+
+        // iphone x
+        @media only screen and (max-width: 375px) and (max-height: 812px){
+            width: 339px;
         }
 
         #copyright {
