@@ -42,6 +42,12 @@ class Nav extends Component {
     renderSidenavLinks() {
         return (
             <>
+                <li className="sidenav-coaches-title">
+                    <p>SPECIALTY <span className="coach-letter">C</span>OACHES</p>
+                </li>
+                <li className="sidenav-menu-title">
+                    <p>MENU</p>
+                </li>
                 <li className="sidenav-close first-link">
                     <a onClick={this.scrollToTop}><span className="desktop-link">Home</span></a>
                 </li>
