@@ -1,34 +1,37 @@
 
 #service {
-    background: url(../../assets/images/background-services.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 900px;
-    color: #444;
-    background-color: white;
-    background-position-x: 85%;
+    // background: url(../../assets/images/background-services.jpg);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // height: 900px;
+    background-color: #fff;
+    // background-position-x: 85%;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    color: #4a4a4a;
 
     // ipad pro
     @media only screen and (max-width: 1024px){
-        background-position-x: 100%;
+        // background-position-x: 100%;
     }
 
     // ipad
     @media only screen and (max-width: 768px){
-        background-position-x: 145%;
+        // background-position-x: 145%;
     }
 
     // iphone 8 plus
-    @media only screen and (max-width: 414px){
+    @media only screen and (max-width: 414px) and (max-height: 736px){
         background-position-x: 130px;
-        height: 669px;
+        background-size: cover;
+        height: auto;
     }
 
     // iphone x
     @media only screen and (max-width: 375px) and (max-height: 812px){
         background-position-x: 88px;
         background-size: cover;
-        height: 820px;
+        height: auto;
     }
 
     .special-service-container {
@@ -37,11 +40,17 @@
             width: 85%;
         }
 
+        .special-flex-row {
+            display: flex;
+            justify-content: center;
+        }
+
         .services-header-row {
             margin-bottom: 45px;
+            text-align: center;
 
             // iphone 8 plus
-            @media only screen and (max-width: 414px){
+            @media only screen and (max-width: 414px) and (max-height: 736px){
                 margin-bottom: 10px;
             }
 
@@ -51,7 +60,6 @@
                 font-weight: 700;
                 height: 50px;
                 text-transform: uppercase;
-                margin-top: 12vh;
 
                 @media only screen and (max-width: 1024px){
                     margin-top: 5vh;
@@ -62,13 +70,14 @@
                 }
 
                 // iphone 8 plus
-                @media only screen and (max-width: 414px){
+                @media only screen and (max-width: 414px) and (max-height: 736px){
                     font-size: 13px;
+                    margin-top: 0;
                 }
 
                 // iphone x
                 @media only screen and (max-width: 375px) and (max-height: 812px){
-                    margin-top: 12vh;
+                    margin-top: 0vh;
                     font-size: 17px;
                 }
             }
@@ -80,59 +89,200 @@
                 text-transform: uppercase;
 
                 // iphone 8 plus
-                @media only screen and (max-width: 414px){
-                    font-size: 27px;
+                @media only screen and (max-width: 414px) and (max-height: 736px){
+                    font-size: 35px;
                     position: relative;
                     bottom: 10px;
                 }
             }
         }
 
-        .service-explanation {
-            max-width: 800px;
+        .service-explanation-flexed {
+
+            // ipad 
+            @media only screen and (max-width: 768px){
+                background-color: #f6f6f6a3;
+                padding-top: 20px;
+            }
+
+            .service-photo-temp {
+                margin-left: auto;
+                height: 250px;
+                margin-right: auto;
+                margin-bottom: 30px;
+                display: flex;
+
+                // iphone x
+                @media only screen and (max-width: 375px) and (max-height: 812px){
+                    margin-bottom: 0;
+                }
+
+                img {
+                    height: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 1px;
+                    border: 1px solid #2b3345;
+                    background-color: #fff;
+
+                    // iphone x
+                    @media only screen and (max-width: 375px) and (max-height: 812px){
+                        height: 88%;
+                    }
+                }
+            }
 
             .services-title {
+                letter-spacing: 1px;
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight: 600;
                 font-size: 1.3em;
+                text-align: center;
+                font-family: inherit;
+                color: #2b3345;
 
                 // iphone 8 plus
                 @media only screen and (max-width: 414px){
                     font-size: 15px;
+                    line-height: 23px;
+                }
+
+                // iphone x
+                @media only screen and (max-width: 375px) and (max-height: 812px){
+                    font-size: 1.3em;
                 }
             }
 
             .service-paragraph {
+                font-family: 'Work Sans', sans-serif;
+                text-align: center;
+                max-width: 370px;
+                margin-left: auto;
+                margin-right: auto;
+                letter-spacing: 1px;
+                font-size: 14px;
 
                 // iphone 8 plus
-                @media only screen and (max-width: 414px){
+                @media only screen and (max-width: 414px) and (max-height: 736px){
                     font-size: 12px;
+                    line-height: 23px;
                 }
             }
+        }
+
+        .services-btn-container {
+            text-align: center;
+        }
+
+        .service-explanation {
+            max-width: 800px;
+
+            // ipad pro 
+            @media only screen and (max-width: 1024px){
+                margin-left: 2%;
+            }
+
+            // ipad
+            @media only screen and (max-width: 768px){
+                width: 100%;
+                margin-left: 0;
+                background-color: #f6f6f6a3;
+                padding-top: 20px;
+            }
+
+            .service-photo-temp {
+                margin-left: auto;
+                height: 250px;
+                margin-right: auto;
+                margin-bottom: 30px;
+                display: flex;
+
+                // iphone x
+                @media only screen and (max-width: 375px) and (max-height: 812px){
+                    margin-bottom: 0;
+                }
+
+                img {
+                    height: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 1px;
+                    border: 1px solid #2b3345;
+                    background-color: #fff;
+
+                    // iphone x
+                    @media only screen and (max-width: 375px) and (max-height: 812px){
+                        height: 88%;
+                    }
+                }
+            }
+
+            .services-title {
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1.3em;
+                text-align: center;
+                font-family: inherit;
+                color: #2b3345;
+
+                // iphone 8 plus
+                @media only screen and (max-width: 414px) and (max-height: 736px){
+                    font-size: 15px;
+                    line-height: 23px;
+                }
+            }
+
+            .service-paragraph {
+                text-align: center;
+                max-width: 370px;
+                margin-left: auto;
+                margin-right: auto;
+                letter-spacing: 1px;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 14px;
+                font-weight: 100;
+
+                // iphone 8 plus
+                @media only screen and (max-width: 414px) and (max-height: 736px){
+                    font-size: 12px;
+                    line-height: 23px;
+                }
+            }
+        }
+
+        .explanation-pg2 {
+
+            // ipad pro 
+            @media only screen and (max-width: 1024px){
+                margin-left: 10%;
+            }
+
+            // ipad
+            @media only screen and (max-width: 768px){
+                width: 100%;
+                margin-left: 0;
+                margin-top: 6%;
+            }
+
+            // iphone 8 plus
+            @media only screen and (max-width: 414px) and (max-height: 736px){
+                margin-top: 6%;
+            }
+            
         }
 
         .special-services-row {
             margin-bottom: 5em;
 
+            // ipad
+            @media only screen and (max-width: 768px){
+                margin-bottom: 3em;
+            }
+
             // iphone 8 plus
-            @media only screen and (max-width: 414px){
+            @media only screen and (max-width: 414px) and (max-height: 736px){
                 margin-bottom: 16px;
-            }
-
-            .first-service-icon {
-
-                @media only screen and (max-width: 768px){
-                    margin-right: 13px;
-                }
-            }
-
-            .custom-services-icon {
-                font-size: 4em;
-
-                // iphone 8 plus
-                @media only screen and (max-width: 414px){
-                    font-size: 2em;
-                }
             }
         }
 
@@ -140,7 +290,7 @@
             margin-bottom: 5em;
 
             // iphone 8 plus
-            @media only screen and (max-width: 414px){
+            @media only screen and (max-width: 414px and (max-height: 736px)){
                 margin-bottom: 16px;
             }
 
@@ -155,7 +305,7 @@
                 font-size: 4em;
 
                 // iphone 8 plus
-                @media only screen and (max-width: 414px){
+                @media only screen and (max-width: 414px) and (max-height: 736px){
                     font-size: 2em;
                 }
             }
@@ -165,7 +315,7 @@
             margin-bottom: 2em;
 
             // iphone 8 plus
-            @media only screen and (max-width: 414px){
+            @media only screen and (max-width: 414px) and (max-height: 736px){
                 margin-bottom: 5px;
             }
 
@@ -180,7 +330,7 @@
                 font-size: 4em;
 
                 // iphone 8 plus
-                @media only screen and (max-width: 414px){
+                @media only screen and (max-width: 414px) and (max-height: 736px){
                     font-size: 2em;
                 }
             }
@@ -191,7 +341,7 @@
             height: 54px;
             color: #fff;
             border: none;
-            background-color: #2b3345;
+            background-color: #e69500;
             text-transform: uppercase;
             line-height: 54px;
             font-weight: 600;
@@ -200,18 +350,18 @@
             margin-top: 15px;
 
             // iphone 8 plus
-            @media only screen and (max-width: 414px){
-                height: 35px;
-                line-height: 35px;
-                padding-left: 2em;
-                padding-right: 2em;
+            @media only screen and (max-width: 414px) and (max-height: 736px){
+                height: 54px;
+                line-height: 54px;
+                padding-left: 3em;
+                padding-right: 3em;
                 font-weight: 300;
-                font-size: 10px;
+                font-size: 12px;
             }
         }
 
         .custom-services-btn:hover {
-            background-color: #82ba47;
+            background-color: #2b3345;
         }
     }
 }

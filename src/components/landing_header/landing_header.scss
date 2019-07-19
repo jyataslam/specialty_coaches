@@ -4,7 +4,7 @@
     margin-top: -64px;
     height: 100vh;
     position: relative;
-    background: url(../../assets/images/tourbus-landing-cropped.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/tourbus-landing-cropped.jpeg);
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -16,76 +16,45 @@
         margin-top: -64px;
         height: 100vh;
         position: relative;
-        background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) ), url(../../assets/images/tourbus-landing-cropped.jpeg);
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/tourbus-landing-cropped.jpeg);
         background-attachment: scroll;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    // horizontal queries
-    @media only screen and (min-width: 495px) and (max-width: 649px){
-        // background-position-x: -580px;
-    }
-
-    @media only screen and (min-width: 650px) and (max-width: 819px){
-        // background-position-x: -480px;
-    }
-
-    @media only screen and (min-width: 820px) and (max-width: 991px){
-        // background-position-x: -390px;
-    }
-
-    @media only screen and (min-width: 992px) and (max-width: 1255px){
-        // background-position-x: -300px;
-    }
-
-    @media only screen and (min-width: 1256px) and (max-width: 1305px){
-        // background-position-x: -150px;
-    }
-
-    @media only screen and (min-width: 1306px) and (max-width: 1446px){
-        // background-position-x: -100px;
-    }
-
-    // vertical queries
-    @media only screen and (min-height: 0px) and (max-height: 594px){
-        background-position-x: 0;
-    }
-
-    
     .header-text-container {
         min-height: 929px;
         text-align: center;
-        margin-right: 0;
-        margin-left: 500px;
+        margin-right: auto;
+        margin-left: auto;
         
-        @media only screen and (max-width: 494px){
-            margin-left: 5%;
-        }
+        // @media only screen and (max-width: 494px){
+        //     margin-left: 5%;
+        // }
 
-        @media only screen and (min-width: 495px) and (max-width: 649px){
-            margin-left: 22%;
-        }
+        // @media only screen and (min-width: 495px) and (max-width: 649px){
+        //     margin-left: 22%;
+        // }
 
-        @media only screen and (min-width: 650px) and (max-width: 721px){
-            margin-left: 170px;
-        }
+        // @media only screen and (min-width: 650px) and (max-width: 721px){
+        //     margin-left: 170px;
+        // }
 
-        @media only screen and (min-width: 722px) and (max-width: 991px){
-            margin-left: 163px;
-        }
+        // @media only screen and (min-width: 722px) and (max-width: 991px){
+        //     margin-left: 163px;
+        // }
     
-        @media only screen and (min-width: 992px) and (max-width: 1255px){
-            margin-left: 292px;
-        }
+        // @media only screen and (min-width: 992px) and (max-width: 1255px){
+        //     margin-left: 292px;
+        // }
     
-        @media only screen and (min-width: 1256px) and (max-width: 1305px){
-            margin-left: 450px;
-        }
+        // @media only screen and (min-width: 1256px) and (max-width: 1305px){
+        //     margin-left: 450px;
+        // }
 
-        @media only screen and (min-width: 1306px) and (max-width: 1414px){
-            margin-left: 470px;
-        }
+        // @media only screen and (min-width: 1306px) and (max-width: 1414px){
+        //     margin-left: 470px;
+        // }
 
         // @media only screen and (min-width: 1415px) and (max-width: 1635px){
 
