@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import SideNav from './sidenav';
 import { Link, animateScroll as scroll } from "react-scroll";
+import diamond from '../../assets/images/diamond-menu.png';
 
 import './nav.scss';
 
@@ -43,10 +44,16 @@ class Nav extends Component {
         return (
             <>
                 <li className="sidenav-coaches-title">
-                    <p>SPECIALTY <span className="coach-letter">C</span>OACHES</p>
+                    <p>Specialty <span className="coach-letter">C</span>oaches</p>
                 </li>
                 <li className="sidenav-menu-title">
                     <p>MENU</p>
+                </li>
+                {/* <li><div className="divider menu-divider"></div></li> */}
+                <li className="sidenav-circles-container">
+                    <div className="sidenav-circle"></div>
+                    <div className="sidenav-circle"></div>
+                    <div className="sidenav-circle"></div>
                 </li>
                 <li className="sidenav-close first-link">
                     <a onClick={this.scrollToTop}><span className="desktop-link">Home</span></a>
