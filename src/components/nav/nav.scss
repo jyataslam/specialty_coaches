@@ -112,7 +112,7 @@
     }
 
     .desktop-link.top {
-        color: #4b4b4b;
+        color: whitesmoke;
     }
 
     .desktop-link.bottom {
@@ -133,8 +133,9 @@
 
     li > a {
         color: #444;
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: 2px;
+        font-size: 16px;
     }
 
     .sidenav-coaches-title {
@@ -167,9 +168,7 @@
     .divider {
         margin: 8px 0 8px 20px;
         width: 85%;
-        background-color: black;
-        position: relative;
-        bottom: 28px;
+        background-color: rgba(182, 182, 182, 0.575);
     }
 
     .menu-divider {
@@ -186,8 +185,8 @@
         height: 10px;
         width: 30%;
         position: relative;
-        bottom: 30px;
-        margin: 0 25%;
+        bottom: 10px;
+        margin: 0 35%;
         display: flex;
         justify-content: space-evenly;
 
@@ -195,19 +194,15 @@
             height: 10px;
             width: 10px;
             border-radius: 50%;
-            background-color: black;
+            background-color: #00000036;
         }
     }
 
     .first-link {
         margin-top: 8px;
-        position: relative;
-        bottom: 28px;
     }
 
     .sidenav-close {
-        position: relative;
-        bottom: 28px;
     }
 }
 
