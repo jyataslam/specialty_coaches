@@ -23,16 +23,16 @@ class Services extends Component {
                         </Fade>
                         <Fade bottom>
                             <div className="row special-services-row">
-                                <div className="col s12 m5 offset-m1 service-explanation">
+                                <div className="col s12 m5 service-explanation">
                                     <div className="service-photo-temp">
-                                        <img className="services-bus-photo" src={stormtrooperOutside} alt="Outside Image of Tour Bus"/>
+                                        <img className="services-bus-photo" src={stormtrooperOutside} alt="Outside Image of Tour Bus" />
                                     </div>
                                     <h2 className="services-title">Concert Touring</h2>
-                                    <p className="service-paragraph">Whether you need a band bus, crew bus, or star coach, we're just a call away.</p>
+                                    <p className="service-paragraph mb-5em">Whether you need a band bus, crew bus, or star coach, we're just a call away.</p>
                                 </div>
-                                <div className="col s12 m5 service-explanation explanation-pg2">
+                                <div className="col s12 m5 offset-m1 service-explanation explanation-pg2">
                                     <div className="service-photo-temp">
-                                        <img src={stormtrooperInside} alt="Inside of Tour Bus"/>
+                                        <img src={stormtrooperInside} alt="Inside of Tour Bus" />
                                     </div>
                                     <h2 className="services-title">Corporate Events</h2>
                                     <p className="service-paragraph">We're well versed in thinking outside the box. We can provide a solution for your special event or corporate tour including vehicle wrapping.</p>
@@ -43,18 +43,23 @@ class Services extends Component {
                             <div className="row special-flex-row">
                                 <div className="col s12 service-explanation-flexed center">
                                     <div className="service-photo-temp">
-                                        <img src={stormtrooperDressing} alt="Tour Bus Dressing Room"/>
+                                        <img src={stormtrooperDressing} alt="Tour Bus Dressing Room" />
                                     </div>
-                                    <h2 className="services-title">Concert Touring</h2>
-                                    <p className="service-paragraph">Whether you need a band bus, crew bus, or star coach, we're just a call away.</p>
+                                    <h2 className="services-title">Dressing Rooms</h2>
+                                    <p className="service-paragraph">Whether you need a dressing room, production office or need to move around town, we have a coach that can work for you.</p>
                                 </div>
                             </div>
                         </Fade>
                         <Fade>
-                            <div className="services-btn-container">
-                                <Link to="contact" spy={true} smooth={true} duration={600}>
-                                    <a href="" className="waves-effect waves-light btn custom-services-btn">Contact Us To Learn More</a>
-                                </Link>
+                            <div className="row">
+                                <div className="services-bottom-tagline col s12 m9">
+                                    <h3 className="services-tagline">Contact us for our full range of amenities</h3>
+                                </div>
+                                <div className="col s12 m3">
+                                    <Link to="contact" spy={true} smooth={true} duration={600}>
+                                        <a href="" className="waves-effect waves-light btn custom-services-btn">Learn More</a>
+                                    </Link>
+                                </div>
                             </div>
                         </Fade>
                     </div>
