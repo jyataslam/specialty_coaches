@@ -51,11 +51,11 @@ class Services extends Component {
                             </div>
                         </Fade>
                         <Fade>
-                            <div className="row">
+                            <div className="row custom-tagline-row">
                                 <div className="services-bottom-tagline col s12 m9">
                                     <h3 className="services-tagline">Contact us for our full range of amenities</h3>
                                 </div>
-                                <div className="col s12 m3">
+                                <div className="services-bottom-btn col s12 m3">
                                     <Link to="contact" spy={true} smooth={true} duration={600}>
                                         <a href="" className="waves-effect waves-light btn custom-services-btn">Learn More</a>
                                     </Link>
