@@ -4,22 +4,24 @@
     margin-top: -64px;
     height: 100vh;
     position: relative;
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/tourbus-landing-cropped.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/landing-background-1.JPG);
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
+    background-position: bottom;
 
     @media only screen and (min-width: 0px) and (max-width: 494px){
         overflow: hidden;
         margin-top: -64px;
         height: 100vh;
         position: relative;
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/tourbus-landing-cropped.jpeg);
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/landing-background-1.JPG);
         background-attachment: scroll;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: right;
     }
 
     .header-text-container {
