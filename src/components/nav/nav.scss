@@ -53,6 +53,12 @@
             font-family: 'Orbitron', sans-serif;
         }
 
+        // ipad
+        @media only screen and (max-width: 768px){
+            color: whitesmoke;
+        }
+
+        // iphone plus
         @media only screen and (max-width: 494px){
             color: whitesmoke;
             font-size: 15px;
