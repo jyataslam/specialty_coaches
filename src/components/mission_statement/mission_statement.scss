@@ -1,0 +1,170 @@
+
+#services {
+    background: #f1f1f1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    letter-spacing: 0.5px;
+
+    .mission-header-row {
+        margin-bottom: 50px;
+
+        .services-text {
+            font-size: 16px;
+            letter-spacing: 1.75px;
+            font-weight: 700;
+            height: 50px;
+        }
+    
+        .services-description {
+            font-size: 42px;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+    }
+
+    .special-mission-container {
+        width: 90%;
+
+        .special-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 40px;
+            height: 250px;
+
+            .first-statement-photo {
+                border-radius: 10px;
+                background-size: cover;
+                margin-right: 30px;
+                margin-left: 0;
+                height: 250px;
+                background-position: center;
+                width: 250px;
+                position: relative;
+                right: 80px;
+
+                .empty-photo-border {
+                    border: 1px solid orange;
+                    height: 250px;
+                    width: 250px;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    right: 0px;
+                    opacity: 0.7;
+                }
+
+                .first-bus-photo {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 3px;
+                }
+            }
+
+            .second-statement-photo {
+                border-radius: 10px;
+                margin-right: 0px;
+                background-size: cover;
+                margin-left: 30px;
+                height: 250px;
+                background-position: center;
+                width: 250px;
+                position: relative;
+                left: 80px;
+
+                .empty-photo-border {
+                    border: 1px solid orange;
+                    height: 250px;
+                    width: 250px;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    right: 0px;
+                    opacity: 0.7;
+                }
+
+                .second-bus-photo {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 3px;
+                }
+            }
+
+            .third-statement-photo {
+                border-radius: 10px;
+                background-size: cover;
+                margin-right: 30px;
+                margin-left: 0;
+                height: 250px;
+                background-position: center;
+                width: 250px;
+                position: relative;
+                right: 80px;
+
+                .empty-photo-border {
+                    border: 1px solid orange;
+                    height: 250px;
+                    width: 250px;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    right: 0px;
+                    opacity: 0.7;
+                }
+
+                .third-bus-photo {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 3px;
+                }
+            }
+
+            .first-statement-text {
+                margin-left: 20px;
+                position: relative;
+                bottom: 0px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                border-left: 2px solid lightgrey;
+                padding-left: 45px;
+
+                .description-title {
+                    text-transform: uppercase;
+                    position: relative;
+                    bottom: 10px;
+                    font-weight: 700;
+                    font-size: 1.3em;
+                }
+
+                .description-text {
+                    padding: 0 20px;
+                }
+            }
+
+            .first-statement-text-left {
+                margin-right: 20px;
+                margin-left: 0;
+                position: relative;
+                bottom: 0px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                border-right: 2px solid lightgrey;
+                padding-right: 45px;
+
+                .description-title {
+                    text-transform: uppercase;
+                    position: relative;
+                    bottom: 10px;
+                    font-weight: 700;
+                    font-size: 1.3em;
+                }
+
+                .description-text {
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}
