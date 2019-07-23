@@ -3,8 +3,7 @@
     background: url(../../assets/images/tourbus-red-sized.jpeg);
     background-size: auto;
     background-repeat: no-repeat;
-    height: 900px;
-    background-position-y: -220px;
+    height: 1000px;
     color: white;
     overflow: hidden;
 
@@ -90,6 +89,11 @@
                 margin-top: 8vh;
                 text-align: center;
                 font-size: 17px;
+            }
+
+            // large monitors
+            @media only screen and (min-width: 2000px){
+                margin-top: 12vh;
             }
         }
         
