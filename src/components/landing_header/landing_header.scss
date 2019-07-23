@@ -18,10 +18,10 @@
         height: 100vh;
         position: relative;
         // background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/landing-background-1.JPG);
-        background-attachment: scroll;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: right;
+        // background-attachment: scroll;
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-position: right;
     }
 
     .header-text-container {
@@ -176,6 +176,7 @@
                 // small width mobile phones
                 @media only screen and (max-width: 375px){
                     background-position-x: -670px;
+                    background-attachment: scroll;
                 }
             }
         }
