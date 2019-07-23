@@ -28,7 +28,7 @@
     letter-spacing: 0.7px;
 
     .brand-logo.top {
-        font-family: 'Orbitron', sans-serif;
+        font-family: 'gothic', sans-serif;
         color: whitesmoke;
         width: 70%;
         max-width: 392px;
@@ -50,7 +50,7 @@
             text-align: center;
             font-size: 18px;
             color: #444;
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'gothic', sans-serif;
         }
 
         // ipad
@@ -76,7 +76,7 @@
     }
 
     .brand-logo.bottom {
-        font-family: 'Orbitron', sans-serif;
+        font-family: 'gothic', sans-serif;
         // color: #444;
         color: whitesmoke;
         width: 70%;
@@ -134,23 +134,22 @@
 }
 
 #sidenav {
-    background-color: #dbdbdb;
-    color: black;
+    background-color: black;
+    color: white;
 
     li > a {
-        color: #444;
-        font-weight: 400;
+        color: white;
+        font-weight: 200;
         letter-spacing: 2px;
         font-size: 16px;
     }
 
     .sidenav-coaches-title {
-        font-family: 'Orbitron', sans-serif;
+        font-family: 'gothic', sans-serif;
         letter-spacing: 3px;
-        font-weight: 800;
-        padding: 0 32px;
-        font-size: 15px;
+        font-size: 20px;
         text-align: center;
+        margin-top: 32px;
 
         .coach-letter {
             color: darkorange;
@@ -190,25 +189,20 @@
     .sidenav-circles-container {
         height: 10px;
         width: 30%;
-        position: relative;
-        bottom: 10px;
         margin: 0 35%;
         display: flex;
         justify-content: space-evenly;
 
         .sidenav-circle {
-            height: 10px;
-            width: 10px;
+            height: 5px;
+            width: 5px;
             border-radius: 50%;
-            background-color: #00000036;
+            background-color: #e0e0e057;
         }
     }
 
     .first-link {
         margin-top: 8px;
-    }
-
-    .sidenav-close {
     }
 }
 

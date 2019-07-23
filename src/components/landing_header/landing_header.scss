@@ -4,20 +4,20 @@
     margin-top: -64px;
     height: 100vh;
     position: relative;
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/landing-background-1.JPG);
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    background-position: bottom;
+    // background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/landing-background-1.JPG);
+    // background-attachment: fixed;
+    // background-position: center center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // max-width: 100%;
+    // background-position: bottom;
 
     @media only screen and (min-width: 0px) and (max-width: 494px){
         overflow: hidden;
         margin-top: -64px;
         height: 100vh;
         position: relative;
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/landing-background-1.JPG);
+        // background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/landing-background-1.JPG);
         background-attachment: scroll;
         background-size: cover;
         background-repeat: no-repeat;
@@ -25,53 +25,21 @@
     }
 
     .header-text-container {
-        min-height: 929px;
+        min-height: 300px;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
-        
-        // @media only screen and (max-width: 494px){
-        //     margin-left: 5%;
-        // }
-
-        // @media only screen and (min-width: 495px) and (max-width: 649px){
-        //     margin-left: 22%;
-        // }
-
-        // @media only screen and (min-width: 650px) and (max-width: 721px){
-        //     margin-left: 170px;
-        // }
-
-        // @media only screen and (min-width: 722px) and (max-width: 991px){
-        //     margin-left: 163px;
-        // }
-    
-        // @media only screen and (min-width: 992px) and (max-width: 1255px){
-        //     margin-left: 292px;
-        // }
-    
-        // @media only screen and (min-width: 1256px) and (max-width: 1305px){
-        //     margin-left: 450px;
-        // }
-
-        // @media only screen and (min-width: 1306px) and (max-width: 1414px){
-        //     margin-left: 470px;
-        // }
-
-        // @media only screen and (min-width: 1415px) and (max-width: 1635px){
-
-        // }
-    
-        // @media only screen and (min-width: 1636px){
-            
-        // }
+        bottom: 3%;
+        position: relative;
+        bottom: 100%;
+        z-index: 10;
 
             .header-text-above {
                 color: white;
                 margin-top: 42vh;
                 font-size: 60px;
                 letter-spacing: 5px;
-                font-family: 'Orbitron', sans-serif;
+                font-family: 'Gothic', sans-serif;
                 font-weight: 300;
                 margin-bottom: 20px;
 
@@ -91,8 +59,14 @@
                     font-size: 27px;
                 }
 
-                @media only screen and (max-width: 375px){
-                    font-size: 24px;
+                // iphone x
+                @media only screen and (max-width: 375px) and (max-height: 812px){
+                    font-size: 22px;
+                }
+
+                // iphone 5
+                @media only screen and (max-width: 320px){
+                    font-size: 19px;
                 }
 
                 .coach-letter {
@@ -162,5 +136,48 @@
 
     .align-items-center {
         align-items: center;
+    }
+
+    #slider {
+        overflow: hidden;
+        height: 100% !important;
+        // background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/landing-background-1.JPG);
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        background-position: bottom;
+
+        @media only screen and (min-width: 0px) and (max-width: 494px){
+            overflow: hidden;
+            // margin-top: -64px;
+            height: 100vh;
+            position: relative;
+            // background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../assets/images/landing-background-1.JPG);
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        .slides {
+            height: 100% !important;
+
+            .carousel-photo {
+                background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) );
+                background-attachment: fixed;
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                max-width: 100%;
+                background-position: bottom;
+
+                // small width mobile phones
+                @media only screen and (max-width: 375px){
+                    background-position-x: -670px;
+                }
+            }
+        }
     }
 }
