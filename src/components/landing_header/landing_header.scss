@@ -149,6 +149,20 @@
         .slides {
             height: 100% !important;
 
+            .carousel-photo-bottom {
+                background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) );
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                max-width: 100%;
+                background-position: bottom;
+
+                // small width mobile phones
+                @media only screen and (max-width: 494px){
+                    background-attachment: scroll;
+                }
+            }
+
             .carousel-photo {
                 background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) );
                 background-attachment: fixed;
@@ -156,7 +170,7 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 max-width: 100%;
-                background-position: bottom;
+                // background-position: bottom;
 
                 // small width mobile phones
                 @media only screen and (max-width: 494px){
