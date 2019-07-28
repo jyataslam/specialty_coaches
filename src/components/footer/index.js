@@ -17,10 +17,10 @@ class Footer extends Component {
                             <a onClick={this.scrollToTop}>Home</a>
                         </li>
                         <li className="col s12 m1 second-li">
-                            <Link to="service" spy={true} smooth={true} offset={-40} duration={600}>Services</Link>
+                            <Link to="service" spy={true} smooth={true} offset={0} duration={600}>Services</Link>
                         </li>
                         <li className="col s12 m1 third-li">
-                            <Link to="about" spy={true} smooth={true} offset={-50} duration={600}>About Us</Link>
+                            <Link to="about" spy={true} smooth={true} offset={0} duration={600}>About Us</Link>
                         </li>
                         <li className="col s12 m1 fourth-li">
                             <Link to="contact" spy={true} smooth={true} duration={600}>Contact</Link>

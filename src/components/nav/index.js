@@ -78,10 +78,10 @@ class Nav extends Component {
                     <a onClick={this.scrollToTop}><span className={`desktop-link ${text}`}>Home</span></a>
                 </li>
                 <li className="sidenav-close pr-20 pl-20">
-                    <Link to="service" spy={true} smooth={true} offset={-40} duration={600}><span className={`desktop-link ${text}`}>Services</span></Link>
+                    <Link to="service" spy={true} smooth={true} offset={0} duration={600}><span className={`desktop-link ${text}`}>Services</span></Link>
                 </li>
                 <li className="sidenav-close pr-20 pl-20">
-                    <Link to="about" spy={true} smooth={true} offset={-50} duration={600}><span className={`desktop-link ${text}`}>About Us</span></Link>
+                    <Link to="about" spy={true} smooth={true} offset={0} duration={600}><span className={`desktop-link ${text}`}>About Us</span></Link>
                 </li>
                 <li className="sidenav-close pl-20">
                     <Link to="contact" spy={true} smooth={true} duration={600}><span className={`desktop-link ${text}`}>Contact</span></Link>
