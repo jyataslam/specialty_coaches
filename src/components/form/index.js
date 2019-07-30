@@ -115,7 +115,7 @@ class Form extends Component {
                             </div>
                             <div className="row">
                                 <div className="input-field col s12">
-                                    <i className="material-icons prefix">message</i>
+                                    <i className="material-icons prefix">mode_edit</i>
                                     <textarea name="message" id="message" className="materialize-textarea custom-textarea" value={message} onChange={e => this.setState({ message: e.target.value })}></textarea>
                                     <label htmlFor="message">Message</label>
                                 </div>
