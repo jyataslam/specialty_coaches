@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+
 import './form.scss';
 
 class Form extends Component {
@@ -6,16 +8,26 @@ class Form extends Component {
         name: "",
         email: "",
         subject: "",
-        message: "",
-        mailSent: false,
-        error: null
+        message: ""
     }
 
     handleFormSubmit = event => {
+        const { name, email, subject, message } = this.state;
         event.preventDefault();
-        console.log('state', this.state);
-    }
-
+        axios({
+            method: 'POST',
+            url: 'http://localhost:8888/api/mail_handler.php',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            data: `name=${name}&email=${email}&subject=${subject}&message=${message}`
+        })
+        .then(resp => {
+            if (resp.data.success === true){
+                console.log('it worked');
+            } else {
+                console.log('did not work');
+            }
+        })};
+       
     render() {
         const { name, email, subject, message } = this.state;
 
@@ -32,24 +44,24 @@ class Form extends Component {
                         <div className="col s12">
                             <div className="row">
                                 <div className="input-field col s12 m6">
-                                    <input id="name" type="text" className="validate" value={name} onChange={e => this.setState({ name: e.target.value })}/>
+                                    <input name="name" id="name" type="text" className="validate" value={name} onChange={e => this.setState({ name: e.target.value })}/>
                                     <label htmlFor="name">Name</label>
                                 </div>
                                 <div className="input-field col s12 m6">
                                     <i className="mdi-content-mail prefix"></i>
-                                    <input id="email" type="email" className="validate" value={email} onChange={e => this.setState({ email: e.target.value })}/>
+                                    <input name="email" id="email" type="email" className="validate" value={email} onChange={e => this.setState({ email: e.target.value })}/>
                                     <label htmlFor="email">Email</label>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="input-field col s12">
-                                    <input id="subject" type="text" className="validate" value={subject} onChange={e => this.setState({ subject: e.target.value })}/>
+                                    <input name="subject" id="subject" type="text" className="validate" value={subject} onChange={e => this.setState({ subject: e.target.value })}/>
                                     <label htmlFor="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea id="message" className="materialize-textarea" value={message} onChange={e => this.setState({ message: e.target.value })}></textarea>
+                                <div className="input-field col s12">
+                                    <textarea name="message" id="message" className="materialize-textarea validate" value={message} onChange={e => this.setState({ message: e.target.value })}></textarea>
                                     <label htmlFor="message">Message</label>
                                 </div>
                             </div>
