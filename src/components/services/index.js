@@ -56,7 +56,7 @@ class Services extends Component {
                                     <h3 className="services-tagline">Contact us for our full range of amenities</h3>
                                 </div>
                                 <div className="services-bottom-btn col s12 m3">
-                                    <Link to="contact" spy={true} smooth={true} duration={600}>
+                                    <Link to="footer" spy={true} smooth={true} duration={600}>
                                         <a href="" className="waves-effect waves-light btn custom-services-btn">Learn More</a>
                                     </Link>
                                 </div>
