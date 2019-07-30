@@ -17,8 +17,8 @@ const App = () => (
             <Header id="home" />
             <Services id="service" />
             <About id="about" />
-            <Form id="form" />
-            <Footer id="contact" />
+            <Form id="contact-form" />
+            <Footer id="footer" />
         </div>
     </>
 );
