@@ -35,7 +35,7 @@
     }
 
     .special-about-container {
-        // width: 70%;
+        max-width: 1600px;
 
         @media only screen and (min-width: 993px){
             width: 85%;
