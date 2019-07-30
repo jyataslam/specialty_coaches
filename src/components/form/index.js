@@ -15,10 +15,10 @@ class Form extends Component {
         visibility: 'fadeOutClass'
     }
 
-    handleFormSubmit = event => {
+    handleFormSubmit = async (event) => {
         const { name, email, subject, message } = this.state;
         event.preventDefault();
-        axios({
+        await axios({
             method: 'POST',
             url: 'http://localhost:8888/api/mail_handler.php',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
