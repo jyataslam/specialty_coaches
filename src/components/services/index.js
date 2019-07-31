@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Link, animateScroll as scroll } from "react-scroll";
-import stormtrooperOutside from '../../assets/images/stormtrooper-outside.jpg';
+import stormtrooperOutside from '../../assets/images/concert-touring.jpg';
 import stormtrooperInside from '../../assets/images/stormtrooper-inside.png';
 import stormtrooperDressing from '../../assets/images/stormtrooper-bedroom.jpg';
 import './services.scss';
