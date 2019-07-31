@@ -58,13 +58,13 @@
                 }
 
                 .coach-letter {
-                    color: orange;
+                    color: white;
                 }
             
             }
 
             .header-text-above::first-letter {
-                color: orange;
+                color: white;
             }
     
             .head-divider {
@@ -157,9 +157,19 @@
                 max-width: 100%;
                 background-position: bottom;
 
+                // iPad
+                @media only screen and (max-width: 768px){
+                    background-position-x: -450px;
+                }
+
                 // small width mobile phones
                 @media only screen and (max-width: 494px){
                     background-attachment: scroll;
+                }
+
+                @media only screen and (max-width: 414px){
+                    background-attachment: scroll;
+                    background-position-x: -500px;
                 }
             }
 

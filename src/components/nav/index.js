@@ -63,7 +63,7 @@ class Nav extends Component {
                 </li>
                 <li><div className="divider lightgrey"></div></li>
                 <li className="sidenav-close">
-                    <a href="#contact"><span className="desktop-link">Contact</span></a>
+                    <a href="#contact-form"><span className="desktop-link">Contact</span></a>
                 </li>
             </>
         )
@@ -84,7 +84,7 @@ class Nav extends Component {
                     <Link to="about" spy={true} smooth={true} offset={0} duration={600}><span className={`desktop-link ${text}`}>About Us</span></Link>
                 </li>
                 <li className="sidenav-close pl-20">
-                    <Link to="contact" spy={true} smooth={true} duration={600}><span className={`desktop-link ${text}`}>Contact</span></Link>
+                    <Link to="contact-form" spy={true} smooth={true} duration={600}><span className={`desktop-link ${text}`}>Contact</span></Link>
                 </li>
             </>
         )

@@ -1,0 +1,238 @@
+
+#contact-form {
+    background-color: rgb(255, 255, 255);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: #4a4a4a;
+
+    .special-form-container {
+        max-width: 1600px;
+
+        @media only screen and (min-width: 993px){
+            width: 85%;
+        }
+
+        .form-header-row {
+            margin-bottom: 45px;
+            text-align: center;
+
+            // iphone 8 plus
+            @media only screen and (max-width: 414px) and (max-height: 736px){
+                margin-bottom: 10px;
+            }
+
+            // iphone x
+            @media only screen and (max-width: 375px) and (max-height: 812px){
+                margin-bottom: 15px;
+            }
+
+            .form-main-text {
+                font-size: 16px;
+                letter-spacing: 1.75px;
+                font-weight: 700;
+                height: 50px;
+                text-transform: uppercase;
+                margin-bottom: 0;
+
+                // iphone 8 plus
+                @media only screen and (max-width: 414px) and (max-height: 736px){
+                    font-size: 13px;
+                    margin-top: 0;
+                }
+
+                // iphone x
+                @media only screen and (max-width: 375px) and (max-height: 812px){
+                    margin-top: 0vh;
+                    font-size: 17px;
+                }
+            }
+    
+            .form-description {
+                font-size: 42px;
+                margin-bottom: 20px;
+                font-weight: 200;
+                text-transform: uppercase;
+                margin-top: 0;
+                color: #242424;
+
+                // iphone 8 plus
+                @media only screen and (max-width: 414px) and (max-height: 736px){
+                    font-size: 35px;
+                    position: relative;
+                    bottom: 10px;
+                }
+            }
+        }
+
+        .first-form-row {
+
+             // iphone 8 plus
+            @media only screen and (max-width: 414px){
+                margin-bottom: 0;
+            }
+
+            .email-input-field {
+                margin-bottom: 0;
+            }
+        }
+
+        .third-form-row {
+
+            // iphone 8 plus
+            @media only screen and (max-width: 414px){
+                margin-bottom: 0;
+            }
+        }
+
+        .input-field {
+            letter-spacing: 1.2px;
+
+            input {
+                letter-spacing: 1.2px;
+            }
+
+            .custom-textarea {
+                letter-spacing: 1.2px;
+                line-height: inherit;
+            }
+        }
+
+        .form-btn-container {
+            text-align: center;
+
+            .custom-form-btn {
+                border-radius: 27px;
+                height: 54px;
+                color: #fff;
+                border: none;
+                background-color: #2b3345;
+                text-transform: uppercase;
+                line-height: 54px;
+                font-weight: 600;
+                padding-left: 3em;
+                padding-right: 3em;
+                margin-top: 30px;
+    
+                // iphone 8 plus
+                @media only screen and (max-width: 414px) and (max-height: 736px){
+                    height: 54px;
+                    line-height: 54px;
+                    padding-left: 3em;
+                    padding-right: 3em;
+                    font-weight: 300;
+                    font-size: 14px;
+                    margin-top: 15px;
+                }
+            }
+    
+            .custom-form-btn:hover {
+                background-color: #e69500;
+            }
+        }
+
+        .error-message-container {
+            text-align: center;
+            // -webkit-animation: fadein 2s;
+            // -moz-animation: fadein 2s;
+            // -ms-animation: fadein 2s;
+            // animation: fadein 2s;
+
+            .error-message {
+                font-size: 1.5rem;
+                margin-bottom: 0;
+                font-weight: 300;
+                letter-spacing: 1.3px;
+                color: darkred;
+            }
+        }
+
+        .success-message-container {
+            text-align: center;
+            // -webkit-animation: fadein 2s;
+            // -moz-animation: fadein 2s;
+            // -ms-animation: fadein 2s;
+            // animation: fadein 2s;
+
+            .success-message {
+                font-size: 1.5rem;
+                margin-bottom: 0;
+                font-weight: 300;
+                letter-spacing: 1.3px;
+                color: green;
+            }
+        }
+    }
+}
+
+.fadeInClass {
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+.fadeOutClass {
+    -webkit-animation: fadeOut 2s;
+    -moz-animation: fadeOut 2s;
+    -ms-animation: fadeOut 2s;
+    animation: fadeOut 2s;
+}
+
+// .visible {
+//     visibility: visible;
+//     opacity: 1;
+//     transition: opacity 3s linear;
+// }
+// .hidden {
+//     visibility: hidden;
+//     opacity: 0;
+//     transition: visibility 0s 3s, opacity 3s linear;
+// }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* FADE OUT ANIMATION */
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}

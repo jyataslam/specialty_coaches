@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Link, animateScroll as scroll } from "react-scroll";
-import stormtrooperOutside from '../../assets/images/stormtrooper-outside.jpg';
+import stormtrooperOutside from '../../assets/images/concert-touring.jpg';
 import stormtrooperInside from '../../assets/images/stormtrooper-inside.png';
 import stormtrooperDressing from '../../assets/images/stormtrooper-bedroom.jpg';
 import './services.scss';
@@ -56,7 +56,7 @@ class Services extends Component {
                                     <h3 className="services-tagline">Contact us for our full range of amenities</h3>
                                 </div>
                                 <div className="services-bottom-btn col s12 m3">
-                                    <Link to="contact" spy={true} smooth={true} duration={600}>
+                                    <Link to="footer" spy={true} smooth={true} duration={600}>
                                         <a href="" className="waves-effect waves-light btn custom-services-btn">Learn More</a>
                                     </Link>
                                 </div>
