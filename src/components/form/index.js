@@ -20,7 +20,7 @@ class Form extends Component {
         event.preventDefault();
         await axios({
             method: 'POST',
-            url: './api/mail_handler.php',
+            url: 'http://localhost:8888/api/mail_handler.php',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             data: `name=${name}&email=${email}&subject=${subject}&message=${message}`
         })
