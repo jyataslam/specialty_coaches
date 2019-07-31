@@ -7,15 +7,15 @@ require_once('./phpmailer/PHPMailer/src/Exception.php');
 require_once('./phpmailer/PHPMailer/src/PHPMailer.php');
 require_once('./phpmailer/PHPMailer/src/SMTP.php');
 
-foreach($_POST as $key => $value){
-    $_POST[$key] = htmlentities(addslashes($value));
+// foreach($_POST as $key => $value){
+//     $_POST[$key] = htmlentities(addslashes($value));
 
-    $_POST[$key] = ltrim($_POST[$key]);
-    if (strlen($_POST[$key]) === 0) {
-        echo 'Message could not be sent.';
-        exit();
-    }
-}
+//     $_POST[$key] = ltrim($_POST[$key]);
+//     if (strlen($_POST[$key]) === 0) {
+//         echo 'Message could not be sent.';
+//         exit();
+//     }
+// }
 
 $mail = new PHPMailer\PHPMailer\PHPMailer;
 $mail->SMTPDebug = 0;           // Enable verbose debug output. Change to 0 to disable debugging output.
