@@ -10,7 +10,7 @@ class About extends Component {
             <div className="primary-container" id="about">
                 <div className="container special-about-container">
                     <div className="row">
-                        <div className="col s12 m7 l5">
+                        <div className="col s12 m7 l5 ipadpro-col">
                             <Fade>
                                 <>
                             <h2 className="about-text">
