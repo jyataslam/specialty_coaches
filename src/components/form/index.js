@@ -120,11 +120,6 @@ class Form extends Component {
                                     <label htmlFor="message">Message</label>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col s12 form-btn-container">
-                                    <a href="" className="waves-effect waves-light btn custom-form-btn" onClick={e => this.handleFormSubmit(e)}>Submit</a>
-                                </div>
-                            </div>
                             {error &&
                                 <div className={`error-message-container ${visibility}`}>
                                     <h3 className="error-message">Oops, something went wrong</h3>
@@ -135,12 +130,17 @@ class Form extends Component {
                                     <h3 className="success-message">Your message has been sent! We'll get back to you shortly.</h3>
                                 </div>
                             }
+                            <div className="row">
+                                <div className="col s12 form-btn-container">
+                                    <a href="" className="waves-effect waves-light btn custom-form-btn" onClick={e => this.handleFormSubmit(e)}>Submit</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     </Fade>
                 </div>
             </div>
-            </Fade>
+        </Fade>
         )
     }
 }

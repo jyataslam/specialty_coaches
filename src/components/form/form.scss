@@ -134,7 +134,7 @@
             .error-message {
                 font-size: 1.5rem;
                 margin-bottom: 0;
-                font-weight: 300;
+                font-weight: 600;
                 letter-spacing: 1.3px;
                 color: darkred;
             }
@@ -142,15 +142,11 @@
 
         .success-message-container {
             text-align: center;
-            // -webkit-animation: fadein 2s;
-            // -moz-animation: fadein 2s;
-            // -ms-animation: fadein 2s;
-            // animation: fadein 2s;
 
             .success-message {
                 font-size: 1.5rem;
                 margin-bottom: 0;
-                font-weight: 300;
+                font-weight: 600;
                 letter-spacing: 1.3px;
                 color: green;
             }
@@ -171,17 +167,6 @@
     -ms-animation: fadeOut 2s;
     animation: fadeOut 2s;
 }
-
-// .visible {
-//     visibility: visible;
-//     opacity: 1;
-//     transition: opacity 3s linear;
-// }
-// .hidden {
-//     visibility: hidden;
-//     opacity: 0;
-//     transition: visibility 0s 3s, opacity 3s linear;
-// }
 
 @keyframes fadein {
     from { opacity: 0; }
