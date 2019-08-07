@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 const server = new WebpackDevServer(webpack(config), {
     contentBase: resolve(__dirname, 'dist'),
+    proxy: npm_config.proxy,
     publicPath: '/',
     hot: false,
     historyApiFallback: true,

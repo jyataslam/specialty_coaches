@@ -20,7 +20,7 @@ class Form extends Component {
         event.preventDefault();
         await axios({
             method: 'POST',
-            url: 'http://localhost:8888/api/mail_handler.php',
+            url: '/api/mail_handler.php',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             data: `name=${name}&email=${email}&subject=${subject}&message=${message}`
         })
@@ -120,11 +120,6 @@ class Form extends Component {
                                     <label htmlFor="message">Message</label>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col s12 form-btn-container">
-                                    <a href="" className="waves-effect waves-light btn custom-form-btn" onClick={e => this.handleFormSubmit(e)}>Submit</a>
-                                </div>
-                            </div>
                             {error &&
                                 <div className={`error-message-container ${visibility}`}>
                                     <h3 className="error-message">Oops, something went wrong</h3>
@@ -135,12 +130,17 @@ class Form extends Component {
                                     <h3 className="success-message">Your message has been sent! We'll get back to you shortly.</h3>
                                 </div>
                             }
+                            <div className="row">
+                                <div className="col s12 form-btn-container">
+                                    <a href="" className="waves-effect waves-light btn custom-form-btn" onClick={e => this.handleFormSubmit(e)}>Submit</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     </Fade>
                 </div>
             </div>
-            </Fade>
+        </Fade>
         )
     }
 }

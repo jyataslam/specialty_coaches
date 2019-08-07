@@ -39,8 +39,8 @@ $options = array(
 $mail->smtpConnect($options);
 $mail->From = isset($_POST['email']) ? $_POST['email'] : '';  // sender's email address (shows in "From" field)
 $mail->FromName = isset($_POST['name']) ? $_POST['name'] : '';   // sender's name (shows in "From" field)
-$mail->addAddress('jasonyatapro@gmail.com');  // Add a recipient (name is optional)
-//$mail->addAddress('ellen@example.com');                        // Add a second recipient
+$mail->addAddress('sconlineinquiry@gmail.com');  // Add a recipient (name is optional)
+$mail->addAddress('nick@specialtycoaches.com');                        // Add a second recipient
 $mail->addReplyTo(isset($_POST['email']) ? $_POST['email'] : '');                          // Add a reply-to address
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
