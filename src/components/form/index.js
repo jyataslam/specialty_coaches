@@ -184,13 +184,13 @@ class Form extends Component {
                   )}
                   <div className="row">
                     <div className="col s12 form-btn-container">
-                      <a
-                        href=""
+                      <button
+                        type="submit"
                         className="waves-effect waves-light btn custom-form-btn"
                         // onClick={(e) => this.handleFormSubmit(e)}
                       >
                         Submit
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
