@@ -87,7 +87,12 @@ class Form extends Component {
 
     return (
       <Fade>
-        <form id="contact-form" className="primary-container" netlify>
+        <form
+          id="contact-form"
+          className="primary-container"
+          method="POST"
+          netlify
+        >
           <div className="container special-form-container">
             <div className="row form-header-row">
               <div className="col s12">
