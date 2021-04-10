@@ -9,10 +9,18 @@
     <title>Specialty Coaches LLC</title>
     <link rel="icon" href="./assets/images/c2aec1bd2659ed3914e27b7bbc31b9b4.jpg">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron|Noto+Sans+JP|Work+Sans|Roboto|Source+Sans+Pro:300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Orbitron|Noto+Sans+JP|Work+Sans|Roboto|Source+Sans+Pro:300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- A little help for the Netlify post-processing bots -->
+    <form name="contact" netlify netlify-honeypot="bot-field" action='/' hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <textarea name="subject"></textarea>
+    </form>
     <div id="root"></div>
     <script src="/bundle.vendor.js"></script>
     <script src="/bundle.main.js"></script>
