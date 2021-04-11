@@ -114,6 +114,7 @@ class Form extends Component {
                                                 account_circle
                                             </i>
                                             <input
+                                                required
                                                 name="name"
                                                 id="name"
                                                 type="text"
@@ -131,6 +132,7 @@ class Form extends Component {
                                                 email
                                             </i>
                                             <input
+                                                required
                                                 name="email"
                                                 id="email"
                                                 type="email"
@@ -156,6 +158,7 @@ class Form extends Component {
                                                 subject
                                             </i>
                                             <input
+                                                required
                                                 name="subject"
                                                 id="subject"
                                                 type="text"
@@ -177,6 +180,7 @@ class Form extends Component {
                                                 mode_edit
                                             </i>
                                             <textarea
+                                                required
                                                 name="message"
                                                 id="message"
                                                 className="materialize-textarea custom-textarea"
