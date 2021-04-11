@@ -93,6 +93,7 @@ class Form extends Component {
                     method="POST"
                     data-netlify="true"
                     name="contact"
+                    action="/success"
                 >
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="container special-form-container">
