@@ -26,10 +26,7 @@ const HomePage = () => (
                 content="Specialty Coaches LLC - Tour Bus Leasing"
             />
             <meta property="og:site_name" content="Specialty Coaches LLC" />
-            <meta
-                property="og:url"
-                content="https://www.specialtycoaches.com"
-            />
+            <meta property="og:url" content="http://www.specialtycoaches.com" />
             <meta
                 property="og:description"
                 content="Tour Bus Leasing - Entertainer Coaches in Los Angeles"
