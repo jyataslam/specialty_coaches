@@ -66,11 +66,11 @@ class Footer extends Component {
                                 Orange County Office
                             </p>
                             <a
-                                href="https://goo.gl/maps/LV7Ey4pbNmWV2ypM6"
+                                href="https://goo.gl/maps/hQZCZUtb5CbmwXD67"
                                 target="_blank"
                             >
-                                5445 Oceanus Dr. Suite #109<br></br>
-                                Huntington Beach, CA 92649
+                                323 Main Street<br></br>Suite #200<br></br>
+                                Seal Beach, CA 90740
                             </a>
                         </div>
                     </div>
